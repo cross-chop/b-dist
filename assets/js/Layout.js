@@ -24,7 +24,7 @@ const $$Btn = createComponent(($$result, $$props, $$slots) => {
   const Tag = tag === "input" ? "div" : tag;
   return renderTemplate`${renderScript($$result, "/Users/bofft/Works/bebo/src/components/Btn.astro?astro&type=script&index=0&lang.ts")}
 
-${renderComponent($$result, "btn-component", "btn-component", { "data-href": href, "data-target": target, "data-size": size, "data-type": type, "data-color": color, "data-tag": tag, "data-disabled": isDisabled, "data-isActive": isActive, "data-shoulder": shoulder, "data-isWide": isWide, "data-astro-cid-5dcumwjq": true }, { "default": () => renderTemplate`
+${renderComponent($$result, "btn-components", "btn-components", { "data-href": href, "data-target": target, "data-size": size, "data-type": type, "data-color": color, "data-tag": tag, "data-disabled": isDisabled, "data-isActive": isActive, "data-shoulder": shoulder, "data-isWide": isWide, "data-astro-cid-5dcumwjq": true }, { "default": () => renderTemplate`
   ${renderComponent($$result, "Tag", Tag, { "href": tag === "a" ? href : void 0, "target": tag === "a" ? target : void 0, "id": id !== "" ? tag !== "input" ? id : void 0 : void 0, "class:list": ["Btn", {
     L: size === "L",
     M: size === "M",
