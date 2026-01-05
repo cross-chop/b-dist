@@ -1,0 +1,1 @@
+class r extends HTMLElement{constructor(){super(),this.init()}init(){const e=this.querySelector("#deleteBtn"),t=this.querySelector(".form");e&&t&&e.addEventListener("click",n=>{n.preventDefault(),this.handleDelete(t)})}handleDelete(e){confirm("クレジットカード情報を削除してもよろしいですか？")&&e.submit()}}customElements.define("credit-card-delete-handler",r);
