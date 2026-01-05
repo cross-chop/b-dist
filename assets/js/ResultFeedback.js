@@ -1,7 +1,7 @@
 import { c as createComponent, m as maybeRenderHead, f as renderSlot, a as renderTemplate, d as createAstro, b as renderScript, r as renderComponent } from './astro/server.js';
 import 'kleur/colors';
 import 'clsx';
-/* empty css                             */
+/* empty css                           */
 import { $ as $$WaveSeparator } from './WaveSeparator.js';
 import { a as $$Btn } from './Layout.js';
 import { $ as $$SecondPageTitle } from './SecondPageTitle.js';

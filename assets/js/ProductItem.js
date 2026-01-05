@@ -32,7 +32,7 @@ const $$ProductItem = createComponent(($$result, $$props, $$slots) => {
     {
       id: "bio-three-hi",
       title: "\u30D3\u30AA\u30B9\u30EA\u30FC\u9320",
-      type: "\u6307\u5B9A\u90E8\u5916\u533B\u85AC\u54C1",
+      type: "\u6307\u5B9A\u533B\u85AC\u90E8\u5916\u54C1",
       company: "\u30A2\u30EA\u30CA\u30DF\u30F3\u88FD\u85AC",
       capacity: "270\u9320",
       price: "\xA52,900",
@@ -60,7 +60,7 @@ const $$ProductItem = createComponent(($$result, $$props, $$slots) => {
       id: "new-lecicarbon",
       title: "\u65B0\u30EC\u30B7\u30AB\u30EB\u30DC\u30F3\u5750\u5264S",
       type: "\u7B2C3\u985E\u533B\u85AC\u54C1",
-      company: "\u30BC\u30EA\u30A2",
+      company: "\u30BC\u30EA\u30A2\u65B0\u85AC",
       capacity: "10\u500B",
       price: "\xA5638",
       description: "\u809B\u9580\u304B\u3089\u4F7F\u3046\u5750\u5264\u30BF\u30A4\u30D7\u306E\u4FBF\u79D8\u85AC\u3002\u30AC\u30B9\u306E\u529B\u3067\u8178\u3092\u523A\u6FC0\u3057\u3001\u5373\u52B9\u3067\u6392\u4FBF\u3092\u4FC3\u3057\u307E\u3059\u3002\u98F2\u307F\u85AC\u304C\u82E6\u624B\u306A\u65B9\u306B\u3082\u3002"
