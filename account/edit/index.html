@@ -88,22 +88,23 @@
           </ul>
           <div class="sp btns" data-astro-cid-3ef6ksr2>
             <div class="btn_login" data-astro-cid-3ef6ksr2>
-              <btn-component data-href="/sign-in/" data-target="_self" data-size="M" data-type="solid" data-color="#000"
-                data-tag="a" data-disabled="false" data-isActive="false" data-shoulder data-isWide="false"
-                data-astro-cid-5dcumwjq="true">
-                <a href="/sign-in/" target="_self" style="color: #fff;" data-astro-cid-5dcumwjq="true"
-                  class="Btn M solid">
-                  <span class="frame" style="background-color: #000;" data-astro-cid-5dcumwjq></span>
+              <btn-component data-href="/sign-in/" data-target="_self" data-size="M" data-type="transparent"
+                data-color="#000" data-tag="a" data-disabled="false" data-isActive="false" data-shoulder
+                data-isWide="false" data-astro-cid-5dcumwjq="true">
+                <a href="/sign-in/" target="_self" style="color: #000;" data-astro-cid-5dcumwjq="true"
+                  class="Btn M transparent">
+                  <span class="frame" style="background-color: transparent; border-color: #000;"
+                    data-astro-cid-5dcumwjq></span>
                   <span class="text" data-astro-cid-5dcumwjq>ログイン</span>
                 </a>
               </btn-component>
             </div>
-            <div class="btn_cart" data-astro-cid-3ef6ksr2>
-              <btn-component data-href="/cart/" data-target="_self" data-size="M" data-type="solid" data-color="#fff"
+            <div class="btn_cart has_items" data-astro-cid-3ef6ksr2>
+              <btn-component data-href="/cart/" data-target="_self" data-size="M" data-type="solid" data-color="#000"
                 data-tag="a" data-disabled="false" data-isActive="false" data-shoulder data-isWide="false"
                 data-astro-cid-5dcumwjq="true">
                 <a href="/cart/" target="_self" style="color: #fff;" data-astro-cid-5dcumwjq="true" class="Btn M solid">
-                  <span class="frame" style="background-color: #fff;" data-astro-cid-5dcumwjq></span>
+                  <span class="frame" style="background-color: #000;" data-astro-cid-5dcumwjq></span>
                   <img class="icnCart" src="/assets/img/common/icn_cart.svg" alt="カート" data-astro-cid-3ef6ksr2>
                 </a>
               </btn-component>
@@ -142,12 +143,12 @@
                 </div>
               </div>
             </div>
-            <div class="btnCart" data-astro-cid-3ef6ksr2>
-              <btn-component data-href="/cart/" data-target="_self" data-size="M" data-type="solid" data-color="#fff"
+            <div class="btn_cart has_items" data-astro-cid-3ef6ksr2>
+              <btn-component data-href="/cart/" data-target="_self" data-size="M" data-type="solid" data-color="#000"
                 data-tag="a" data-disabled="false" data-isActive="false" data-shoulder data-isWide="false"
                 data-astro-cid-5dcumwjq="true">
                 <a href="/cart/" target="_self" style="color: #fff;" data-astro-cid-5dcumwjq="true" class="Btn M solid">
-                  <span class="frame" style="background-color: #fff;" data-astro-cid-5dcumwjq></span>
+                  <span class="frame" style="background-color: #000;" data-astro-cid-5dcumwjq></span>
                   <img class="icnCart" src="/assets/img/common/icn_cart.svg" alt="カート" data-astro-cid-3ef6ksr2>
                 </a>
               </btn-component>
@@ -216,7 +217,7 @@
               <h1 class="Column_title" data-astro-cid-pq3ktr2b>会員情報を変更</h1>
               <div class="Column_main" data-astro-cid-pq3ktr2b>
                 <script type="module" src="/assets/js/FormValidator.ts.js"></script>
-                <form-validator submit-button-id="submit-btn">
+                <form-validator submit-button-id="submit-btn" edit-mode="true">
                   <form class="form h-adr" action="/account/edit/" method="post" novalidate data-astro-cid-tbefaloh>
                     <span class="p-country-name" style="display:none;" data-astro-cid-tbefaloh>Japan</span>
                     <!-- ご連絡先 -->
@@ -234,8 +235,8 @@
                               </span>
                               <span class="text">お名前</span>
                             </label>
-                            <input type="text" id="name" name="name" placeholder="山田花子" value data-field-type="text"
-                              required class>
+                            <input type="text" id="name" name="name" placeholder="山田花子" value="山田花子"
+                              data-field-type="text" required class>
                             <p class="error" id="name-error" style="display: none;" data-required-error
                               data-validation-error="お名前を入力してください">
                               お名前を入力してください
@@ -570,7 +571,7 @@
                               </span>
                               <span class="text">郵便番号</span>
                             </label>
-                            <input type="text" id="postal-code" name="postal-code" placeholder="1234567" value
+                            <input type="text" id="postal-code" name="postal-code" placeholder="1234567" value="1234567"
                               data-field-type="postal" required class="p-postal-code">
                             <p class="error" id="postal-code-error" style="display: none;" data-required-error
                               data-validation-error="郵便番号を入力してください">
@@ -630,7 +631,7 @@
                               <option value="千葉県">
                                 千葉県
                               </option>
-                              <option value="東京都">
+                              <option value="東京都" selected>
                                 東京都
                               </option>
                               <option value="神奈川県">
@@ -750,8 +751,8 @@
                               </span>
                               <span class="text">市区町村</span>
                             </label>
-                            <input type="text" id="city" name="city" placeholder="豊島区" value data-field-type="text"
-                              required class="p-locality">
+                            <input type="text" id="city" name="city" placeholder="豊島区" value="豊島区"
+                              data-field-type="text" required class="p-locality">
                             <p class="error" id="city-error" style="display: none;" data-required-error
                               data-validation-error="市区町村を入力してください">
                               市区町村を入力してください
@@ -766,8 +767,9 @@
                               </span>
                               <span class="text">番地・建物名</span>
                             </label>
-                            <input type="text" id="address" name="address" placeholder="巣鴨1丁目20-10 宝生第一ビル6階B" value
-                              data-field-type="text" required class="p-street-address p-extended-address">
+                            <input type="text" id="address" name="address" placeholder="巣鴨1丁目20-10 宝生第一ビル6階B"
+                              value="巣鴨1丁目20-10 宝生第一ビル6階B" data-field-type="text" required
+                              class="p-street-address p-extended-address">
                             <p class="error" id="address-error" style="display: none;" data-required-error
                               data-validation-error="番地・建物名を入力してください">
                               番地・建物名を入力してください
@@ -782,7 +784,7 @@
                               </span>
                               <span class="text">電話番号</span>
                             </label>
-                            <input type="text" id="phone" name="phone" placeholder="09012345678" value
+                            <input type="text" id="phone" name="phone" placeholder="09012345678" value="09012345678"
                               data-field-type="phone" required class>
                             <p class="error" id="phone-error" style="display: none;" data-required-error
                               data-validation-error="電話番号を入力してください">
@@ -917,4 +919,3 @@
   <div id="cover" style=""></div>
 </body>
 </html>
-<script src="https://yubinbango.github.io/yubinbango/yubinbango.js" charset="UTF-8"></script>

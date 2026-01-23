@@ -85,7 +85,7 @@ const $$ProductItem = createComponent(($$result, $$props, $$slots) => {
   })) : [];
   return renderTemplate`${renderScript($$result, "/Users/bofft/Works/bebo/src/components/ProductItem.astro?astro&type=script&index=0&lang.ts")}
 
-${renderComponent($$result, "product-item-component", "product-item-component", { "class": "ProductItem", "data-product-id": id, "data-has-variations": hasVariations, "data-astro-cid-nwhxhul2": true }, { "default": () => renderTemplate`
+${renderComponent($$result, "product-item-component", "product-item-component", { "class": `ProductItem ${isNoBtn ? "isNoBtn" : ""}`, "data-product-id": id, "data-has-variations": hasVariations, "data-astro-cid-nwhxhul2": true }, { "default": () => renderTemplate`
   ${maybeRenderHead()}<div class="thumb" data-astro-cid-nwhxhul2>
     <a${addAttribute(`/product/${data.id}/`, "href")} data-astro-cid-nwhxhul2>
       ${hasVariations ? variations.map((variation, index) => renderTemplate`<img${addAttribute(`/assets/img/products/${data.id}_${variation.imageIndex}.webp`, "src")} alt="" class="variation-image"${addAttribute(index, "data-variation-index")}${addAttribute(index === 0 ? "opacity: 1;" : "opacity: 0;", "style")} data-astro-cid-nwhxhul2>`) : renderTemplate`<img${addAttribute(`/assets/img/products/${data.id}.webp`, "src")} alt="" data-astro-cid-nwhxhul2>`}

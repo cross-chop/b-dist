@@ -5,10 +5,10 @@ const $$Astro = createAstro();
 const $$FormValidator = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$FormValidator;
-  const { submitButtonId, postMessage } = Astro2.props;
+  const { submitButtonId, postMessage, editMode = false } = Astro2.props;
   return renderTemplate`${renderScript($$result, "/Users/bofft/Works/bebo/src/components/FormValidator.astro?astro&type=script&index=0&lang.ts")}
 
-${renderComponent($$result, "form-validator", "form-validator", { "submit-button-id": submitButtonId, "post-message": typeof postMessage === "string" ? postMessage : postMessage ? JSON.stringify(postMessage) : void 0 }, { "default": () => renderTemplate`
+${renderComponent($$result, "form-validator", "form-validator", { "submit-button-id": submitButtonId, "post-message": typeof postMessage === "string" ? postMessage : postMessage ? JSON.stringify(postMessage) : void 0, "edit-mode": editMode ? "true" : void 0 }, { "default": () => renderTemplate`
   ${renderSlot($$result, $$slots["default"])}
 ` })}`;
 }, "/Users/bofft/Works/bebo/src/components/FormValidator.astro", void 0);

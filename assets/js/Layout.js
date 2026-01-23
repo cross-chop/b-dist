@@ -95,10 +95,10 @@ ${renderComponent($$result, "header-component", "header-component", { "data-astr
             </ul>
             <div class="sp btns" data-astro-cid-3ef6ksr2>
               <div class="btn_login" data-astro-cid-3ef6ksr2>
-                ${renderComponent($$result2, "Btn", $$Btn, { "class": "login", "text": "\u30ED\u30B0\u30A4\u30F3", "href": "/sign-in/", "size": "M", "type": "solid", "color": "#000", "data-astro-cid-3ef6ksr2": true })}
+                ${renderComponent($$result2, "Btn", $$Btn, { "class": "login", "text": "\u30ED\u30B0\u30A4\u30F3", "href": "/sign-in/", "size": "M", "type": "transparent", "color": "#000", "data-astro-cid-3ef6ksr2": true })}
               </div>
-              <div class="btn_cart" data-astro-cid-3ef6ksr2>
-                ${renderComponent($$result2, "Btn", $$Btn, { "href": "/cart/", "size": "M", "type": "solid", "color": "#fff", "data-astro-cid-3ef6ksr2": true }, { "default": ($$result3) => renderTemplate`
+              <div class="btn_cart has_items" data-astro-cid-3ef6ksr2>
+                ${renderComponent($$result2, "Btn", $$Btn, { "href": "/cart/", "size": "M", "type": "solid", "color": "#000", "data-astro-cid-3ef6ksr2": true }, { "default": ($$result3) => renderTemplate`
                   <img class="icnCart" src="/assets/img/common/icn_cart.svg" alt="カート" data-astro-cid-3ef6ksr2>
                 ` })}
               </div>
@@ -108,7 +108,9 @@ ${renderComponent($$result, "header-component", "header-component", { "data-astr
             </div>
             <div class="pc account" data-astro-cid-3ef6ksr2>
               ${signOut ? renderTemplate`${renderComponent($$result2, "Fragment", Fragment, { "data-astro-cid-3ef6ksr2": true }, { "default": ($$result3) => renderTemplate`
-                  ${renderComponent($$result3, "Btn", $$Btn, { "class": "login", "text": "\u30ED\u30B0\u30A4\u30F3", "href": "/sign-in/", "size": "M", "type": "solid", "color": "#000", "data-astro-cid-3ef6ksr2": true })}
+                  <a class="account_login" href="/sign-in/" data-astro-cid-3ef6ksr2>
+                    <span data-astro-cid-3ef6ksr2>ログイン</span>
+                  </a>
                 ` })}` : renderTemplate`${renderComponent($$result2, "Fragment", Fragment, { "data-astro-cid-3ef6ksr2": true }, { "default": ($$result3) => renderTemplate`
                   <div class="pulldown" data-astro-cid-3ef6ksr2>
                     <a class="pulldown_head" href="/account/" data-astro-cid-3ef6ksr2>
@@ -130,8 +132,8 @@ ${renderComponent($$result, "header-component", "header-component", { "data-astr
                   </div>
                 ` })}`}
 
-              <div class="btnCart" data-astro-cid-3ef6ksr2>
-                ${renderComponent($$result2, "Btn", $$Btn, { "href": "/cart/", "size": "M", "type": "solid", "color": "#fff", "data-astro-cid-3ef6ksr2": true }, { "default": ($$result3) => renderTemplate`
+              <div class="btn_cart has_items" data-astro-cid-3ef6ksr2>
+                ${renderComponent($$result2, "Btn", $$Btn, { "href": "/cart/", "size": "M", "type": "solid", "color": "#000", "data-astro-cid-3ef6ksr2": true }, { "default": ($$result3) => renderTemplate`
                   <img class="icnCart" src="/assets/img/common/icn_cart.svg" alt="カート" data-astro-cid-3ef6ksr2>
                 ` })}
               </div>
