@@ -53,6 +53,16 @@ ${maybeRenderHead()}<div class="FormrunSender"${addAttribute(submitUrl, "data-su
           `)}
         </div>
       </div>
+
+      <!-- エラー画面 -->
+      <div class="form-error" id="form-error" style="display: none;" data-astro-cid-4wwjtlne>
+        <p class="error-text" data-astro-cid-4wwjtlne>送信中にエラーが発生しました。<br data-astro-cid-4wwjtlne>お手数ですが、時間をおいて再度お試しください。</p>
+        <div class="btns" data-astro-cid-4wwjtlne>
+          ${renderSlot($$result, $$slots["error-actions"], renderTemplate`
+            <button type="button" class="Btn" id="error-back-btn" data-astro-cid-4wwjtlne>入力画面に戻る</button>
+          `)}
+        </div>
+      </div>
     </form>
   </div>
 </div>`;
