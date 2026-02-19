@@ -1,13 +1,17 @@
-import { c as createComponent, b as renderScript, r as renderComponent, a as renderTemplate, m as maybeRenderHead, d as createAstro, F as Fragment } from './astro/server.js';
+import { c as createComponent, d as createAstro, b as renderScript, r as renderComponent, a as renderTemplate, m as maybeRenderHead, F as Fragment } from './astro/server.js';
 import 'kleur/colors';
 /* empty css           */
 import { $ as $$Column } from './Column.js';
 import { a as $$Btn } from './Layout.js';
 
+const $$Astro$2 = createAstro();
 const $$InputNumber = createComponent(($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro$2, $$props, $$slots);
+  Astro2.self = $$InputNumber;
+  const { disabled = false } = Astro2.props;
   return renderTemplate`${renderScript($$result, "/Users/bofft/Works/bebo/src/components/InputNumber.astro?astro&type=script&index=0&lang.ts")}
 
-${renderComponent($$result, "input-number", "input-number", { "data-astro-cid-4jsxt6hl": true }, { "default": () => renderTemplate`
+${renderComponent($$result, "input-number", "input-number", { "class": disabled && "disabled", "data-astro-cid-4jsxt6hl": true }, { "default": () => renderTemplate`
   ${maybeRenderHead()}<button type="button" class="CartItem_nums_minus" data-astro-cid-4jsxt6hl></button>
   <input type="number" class="CartItem_nums_current" value="1" min="1" data-astro-cid-4jsxt6hl>
   <button type="button" class="CartItem_nums_plus" data-astro-cid-4jsxt6hl></button>
@@ -32,14 +36,15 @@ const $$CartItems = createComponent(($$result, $$props, $$slots) => {
           <div class="CartItem_img" data-astro-cid-2ba5mcll>
             <img src="/assets/img/_dummy/product.png" alt="" data-astro-cid-2ba5mcll>
           </div>
-          ${renderComponent($$result, "InputNumber", $$InputNumber, { "data-astro-cid-2ba5mcll": true })}
+          ${renderComponent($$result, "InputNumber", $$InputNumber, { "disabled": true, "data-astro-cid-2ba5mcll": true })}
         </div>
         <div class="CartItem_body" data-astro-cid-2ba5mcll>
           <div class="CartItem_name" data-astro-cid-2ba5mcll>
-            <p data-astro-cid-2ba5mcll>Bebo 酸化マグネシウム剤 90錠</p>
+            <p data-astro-cid-2ba5mcll>ビーボ 酸化マグネシウム錠 360錠　定期購入</p>
           </div>
-          <div class="CartItem_price" data-astro-cid-2ba5mcll>
-            <p data-astro-cid-2ba5mcll>1000円</p>
+          <div class="CartItem_price--subscription" data-astro-cid-2ba5mcll>
+            <p data-astro-cid-2ba5mcll>初回：¥2,250</p>
+            <p data-astro-cid-2ba5mcll>次回以降：¥2,500</p>
           </div>
           <button type="button" class="CartItem_delete" data-astro-cid-2ba5mcll>
             <span data-astro-cid-2ba5mcll>削除</span>
@@ -62,7 +67,7 @@ const $$Cart = createComponent(($$result, $$props, $$slots) => {
             <div class="summary" data-astro-cid-atha5qgx>
               <div class="row" data-astro-cid-atha5qgx>
                 <div class="label" data-astro-cid-atha5qgx>小計</div>
-                <div class="price" data-astro-cid-atha5qgx>￥3,520</div>
+                <div class="price" data-astro-cid-atha5qgx>￥2,250</div>
               </div>
               <div class="row" data-astro-cid-atha5qgx>
                 <div class="label" data-astro-cid-atha5qgx>送料</div>
@@ -79,11 +84,36 @@ const $$Cart = createComponent(($$result, $$props, $$slots) => {
                     <span class="unit" data-astro-cid-atha5qgx>(税込)</span>
                   ` })}
                 </div>
-                <div class="price" data-astro-cid-atha5qgx>￥3,520</div>
+                <div class="price" data-astro-cid-atha5qgx>￥2,750</div>
               </div>
             </div>
 
             <div class="payment" data-astro-cid-atha5qgx>
+              <div class="subscription" data-astro-cid-atha5qgx>
+                <p class="note" data-astro-cid-atha5qgx>※定期購入の場合は、会員登録またはログインが必要です。</p>
+                <div class="section" data-astro-cid-atha5qgx>
+                  <p data-astro-cid-atha5qgx>
+                    【定期購入に関するご確認事項】
+                    <br data-astro-cid-atha5qgx>
+                    ビーボ酸化マグネシウム錠 360錠 ご購入者の方
+                    <br data-astro-cid-atha5qgx>
+                    ※ご注文後、2ヶ月に1袋（360錠）お届けいたします。
+                    <br data-astro-cid-atha5qgx>
+                    ※2回目以降は、商品代を2,500円のお支払いです。送料はかかりません（当社負担）。
+                    <br data-astro-cid-atha5qgx>
+                    ※初回はご注文後すぐに決済され、2回目は初回決済日の約2ヶ月後に決済されます。
+                    <br data-astro-cid-atha5qgx>
+                    <br data-astro-cid-atha5qgx>
+                    共通する事項
+                    <br data-astro-cid-atha5qgx>
+                    ※ご注文決済完了後、5日以内に発送いたします。代金引換の場合は、当社が定める方法によるご注文後、5日以内に発送いたします。
+                    <br data-astro-cid-atha5qgx>
+                    ※ご解約は2回目の商品受け取り後にいつでもご解約可能です（それまでは解約不可）。決済予定日前日までにご解約ください。
+                    <br data-astro-cid-atha5qgx>
+                    キャンセル・取引条件は<a href="/refund/" data-astro-cid-atha5qgx>こちら</a>をご確認ください。
+                  </p>
+                </div>
+              </div>
               <div class="section" data-astro-cid-atha5qgx>
                 <h3 class="title" data-astro-cid-atha5qgx>Amazonアカウントでお支払い</h3>
                 <div class="amazon" data-astro-cid-atha5qgx>

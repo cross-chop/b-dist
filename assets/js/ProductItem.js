@@ -14,9 +14,9 @@ const $$ProductItem = createComponent(($$result, $$props, $$slots) => {
       title: "\u30D3\u30FC\u30DC\u9178\u5316\u30DE\u30B0\u30CD\u30B7\u30A6\u30E0\u9320",
       type: "\u7B2C3\u985E\u533B\u85AC\u54C1",
       company: "\u30A8\u30E0\u30DC\u30C3\u30AF\u30B9",
-      capacity: ["360\u9320", "90\u9320", "42\u9320"],
-      days: ["60\u65E5\u5206", "15\u65E5\u5206", "7\u65E5\u5206"],
-      price: ["\xA52,500", "\xA51,500", "\xA5980"],
+      capacity: ["360\u9320", "90\u9320", "42\u9320", "360\u9320"],
+      days: ["60\u65E5\u5206", "15\u65E5\u5206", "7\u65E5\u5206", "60\u65E5\u5206"],
+      price: ["\xA52,500", "\xA51,500", "\xA5980", "\xA52,500"],
       btnColor: "#88C8F0",
       description: "\u9178\u5316\u30DE\u30B0\u30CD\u30B7\u30A6\u30E0\u306F\u3001\u8178\u5185\u6C34\u5206\u3092\u8ABF\u6574\u3057\u3001\u4FBF\u3092\u3084\u308F\u3089\u304B\u304F\u3057\u3001\u81EA\u7136\u306A\u304A\u901A\u3058\u3092\u4FC3\u3059\u305F\u3081\u3001\u304A\u306A\u304B\u304C\u75DB\u304F\u306A\u308A\u306B\u304F\u3044\u306E\u304C\u7279\u5FB4\u3067\u3059\u3002\u5341\u5206\u306A\u6C34\u5206\u3068\u3068\u3082\u306B\u670D\u7528\u3059\u308B\u3053\u3068\u3067\u78BA\u5B9F\u306A\u4F5C\u7528\u304C\u671F\u5F85\u3067\u304D\u307E\u3059\u3002"
     },
@@ -123,10 +123,14 @@ ${renderComponent($$result, "product-item-component", "product-item-component", 
           ${variations.map((variation, index) => renderTemplate`<button type="button" class="variation-btn"${addAttribute(index, "data-variation-index")}${addAttribute(index === 0, "data-active")} data-astro-cid-nwhxhul2>
               <div class="variation-btn-content" data-astro-cid-nwhxhul2>
                 <div class="variation-btn-capacity" data-astro-cid-nwhxhul2>
-                  <span class="capacity" data-astro-cid-nwhxhul2>${variation.capacity}</span>
+                  <span data-astro-cid-nwhxhul2>
+                    ${index === 3 && renderTemplate`<span class="subscription" data-astro-cid-nwhxhul2>定期購入</span>`}
+                    <span class="capacity" data-astro-cid-nwhxhul2>${variation.capacity}</span>
+                  </span>
                   <span class="days" data-astro-cid-nwhxhul2>（${variation.days}）</span>
                 </div>
-                <div class="variation-btn-price" data-astro-cid-nwhxhul2>${variation.price}</div>
+                ${index === 3 && renderTemplate`<div class="variation-btn-price" data-astro-cid-nwhxhul2>初回 ¥2,250〜</div>`}
+                ${!(index === 3) && renderTemplate`<div class="variation-btn-price" data-astro-cid-nwhxhul2>${variation.price}</div>`}
               </div>
             </button>`)}
         </div>`}

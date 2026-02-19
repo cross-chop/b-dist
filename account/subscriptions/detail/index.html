@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<script type="module" src="/assets/js/credit-card.ts.js"></script>
+<script type="module" src="/assets/js/detail.ts.js"></script>
 <html lang="ja" style="">
 <head>
   <!-- Google Tag Manager -->
@@ -21,9 +21,9 @@
   </script>
   <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
-  <title>クレジットカード情報 | Bebo（ビーボ）</title>
+  <title>継続中の定期購入 | Bebo（ビーボ）</title>
   <meta name="description" content="Beboは、症状等に合わせたセルフチェックで、市販薬・食事・生活習慣を提案します。酸化マグネシウム便秘薬や乳酸菌整腸剤など市販薬の選び方もサポート。">
-  <meta property="og:title" content="クレジットカード情報 | Bebo（ビーボ）">
+  <meta property="og:title" content="継続中の定期購入 | Bebo（ビーボ）">
   <meta property="og:description" content="Beboは、症状等に合わせたセルフチェックで、市販薬・食事・生活習慣を提案します。酸化マグネシウム便秘薬や乳酸菌整腸剤など市販薬の選び方もサポート。">
   <meta property="og:site_name" content="Bebo（ビーボ） | おなかの悩みに、答えを。">
   <meta property="og:image" content="https://www.bebo-bowel.com/assets/img/common/ogp.webp">
@@ -164,7 +164,7 @@
       </header>
     </header-component>
     <div class="Container" style="">
-      <div class="ChangeCreditcard" data-astro-cid-km24mp7d>
+      <div class="Subscription" data-astro-cid-7s2p5ut5>
         <div class="Column" data-astro-cid-pq3ktr2b>
           <div class="Column_inner" data-astro-cid-pq3ktr2b>
             <div class="Column_side left" data-astro-cid-pq3ktr2b>
@@ -200,7 +200,7 @@
                         <span data-astro-cid-jtzeilfp>パスワードを変更</span>
                       </a>
                     </li>
-                    <li class="item isActive" data-astro-cid-jtzeilfp>
+                    <li class="item" data-astro-cid-jtzeilfp>
                       <a href="/account/credit-card/" data-astro-cid-jtzeilfp>
                         <span data-astro-cid-jtzeilfp>クレジットカード情報</span>
                       </a>
@@ -210,7 +210,7 @@
                         <span data-astro-cid-jtzeilfp>購入履歴</span>
                       </a>
                     </li>
-                    <li class="item" data-astro-cid-jtzeilfp>
+                    <li class="item isActive" data-astro-cid-jtzeilfp>
                       <a href="/account/subscriptions/" data-astro-cid-jtzeilfp>
                         <span data-astro-cid-jtzeilfp>継続中の定期購入</span>
                       </a>
@@ -220,53 +220,96 @@
               </mypage-menu>
             </div>
             <div class="Column_mainContainer" data-astro-cid-pq3ktr2b>
-              <h1 class="Column_title" data-astro-cid-pq3ktr2b>クレジットカード情報</h1>
+              <h1 class="Column_title" data-astro-cid-pq3ktr2b>継続中の定期購入</h1>
               <div class="Column_main" data-astro-cid-pq3ktr2b>
-                <credit-card-delete-handler data-astro-cid-km24mp7d="true">
-                  <script type="module" src="/assets/js/FormValidator.ts.js"></script>
-                  <form-validator submit-button-id="btnSubmit">
-                    <form class="form" action="/account/no-credit-card/" method="post" novalidate
-                      data-astro-cid-km24mp7d>
-                      <div class="section" data-astro-cid-km24mp7d>
-                        <div class="infos" data-astro-cid-km24mp7d>
-                          <div class="info" data-astro-cid-km24mp7d>
-                            <div class="info_name" data-astro-cid-km24mp7d>クレジットカード</div>
-                          </div>
-                          <div class="info" data-astro-cid-km24mp7d>
-                            <div class="info_label" data-astro-cid-km24mp7d>カード番号</div>
-                            <div class="info_value" data-astro-cid-km24mp7d>**** **** **** 0123</div>
-                          </div>
-                          <div class="info" data-astro-cid-km24mp7d>
-                            <div class="info_label" data-astro-cid-km24mp7d>有効期限</div>
-                            <div class="info_value" data-astro-cid-km24mp7d>09/25</div>
-                          </div>
-                          <div class="info" data-astro-cid-km24mp7d>
-                            <div class="info_label" data-astro-cid-km24mp7d>カード名義</div>
-                            <div class="info_value" data-astro-cid-km24mp7d>KOKI MURAISHI</div>
-                          </div>
+                <div class="detail" data-astro-cid-7s2p5ut5>
+                  <div class="product" data-astro-cid-7s2p5ut5>
+                    <div class="thumb" data-astro-cid-7s2p5ut5>
+                      <img src="/assets/img/_dummy/product.png" alt="ビーボ 酸化マグネシウム錠 360錠" data-astro-cid-7s2p5ut5>
+                    </div>
+                    <div class="name" data-astro-cid-7s2p5ut5>
+                      <p data-astro-cid-7s2p5ut5>ビーボ 酸化マグネシウム錠 360錠 定期購入</p>
+                    </div>
+                  </div>
+                  <div class="delivery-time" data-astro-cid-7s2p5ut5>
+                    <delivary-time data-astro-cid-7s2p5ut5="true">
+                      <form class="form" action="/account/subscriptions/detail/" method="post" data-astro-cid-7s2p5ut5>
+                        <div class="field" data-astro-cid-7s2p5ut5>
+                          <script type="module" src="/assets/js/FormField.ts.js"></script>
+                          <form-field class="FormField" data-field-id="delivery-time">
+                            <label for="delivery-time">
+                              <span class="text">お届け希望時間帯：午前中</span>
+                            </label>
+                            <select id="delivery-time" name="delivery-time" data-field-type="select" class>
+                              <option value="午前中" selected>
+                                午前中
+                              </option>
+                              <option value="14時〜16時">
+                                14時〜16時
+                              </option>
+                              <option value="16時〜18時">
+                                16時〜18時
+                              </option>
+                              <option value="18時〜20時">
+                                18時〜20時
+                              </option>
+                              <option value="19時〜21時">
+                                19時〜21時
+                              </option>
+                            </select>
+                            <p class="error" id="delivery-time-error" style="display: none;" data-required-error
+                              data-validation-error>
+                            </p>
+                          </form-field>
                         </div>
-                      </div>
-                      <div class="actions" data-astro-cid-km24mp7d>
-                        <script type="module" src="/assets/js/Btn.ts.js"></script>
-                        <btn-component data-target="_self" data-size="M_S" data-type="transparent" data-color="#000000"
-                          data-tag="input" data-disabled="false" data-isActive="false" data-shoulder data-isWide="false"
-                          data-astro-cid-5dcumwjq="true">
-                          <div style="color: #000000;" data-astro-cid-5dcumwjq="true" class="Btn M_S transparent">
-                            <span class="frame" style="background-color: transparent; border-color: #000000;"
-                              data-astro-cid-5dcumwjq></span>
-                            <input type="submit" value="削除する" id="deleteBtn" style="color: #000000;"
-                              data-astro-cid-5dcumwjq>
-                          </div>
-                        </btn-component>
-                      </div>
-                    </form>
-                  </form-validator>
-                </credit-card-delete-handler>
+                      </form>
+                    </delivary-time>
+                    <p class="notes" data-astro-cid-7s2p5ut5>
+                      ※次回お届け予定日：yyyy年mm月dd日～mm月dd日<br data-astro-cid-7s2p5ut5>
+                      ※日付・曜日の指定はできません。次回の発送準備分から適用されます。<br data-astro-cid-7s2p5ut5>
+                      ※解約申請は、2回目以降に行えます。<br data-astro-cid-7s2p5ut5>
+                      ※次回の購入スキップは、2回目以降に行えます。
+                    </p>
+                  </div>
+                  <div class="actions" data-astro-cid-7s2p5ut5>
+                    <div class="action" data-astro-cid-7s2p5ut5>
+                      <a href="/account/subscriptions/cancel/" class="Btn" data-astro-cid-7s2p5ut5>定期購入を解約する</a>
+                      <div class="action-note" data-astro-cid-7s2p5ut5>※﻿解約申請は、2回目以降に行えます。</div>
+                    </div>
+                    <div class="action" data-astro-cid-7s2p5ut5><a href="/account/subscriptions/skip/" class="Btn"
+                        data-astro-cid-7s2p5ut5>次回の購入分をスキップする</a></div>
+                  </div>
+                  <script type="module" src="/assets/js/Btn.ts.js"></script>
+                  <btn-component data-href="/account/subscriptions/" data-target="_self" data-size="M_S"
+                    data-type="transparent" data-color="#000000" data-tag="a" data-disabled="false"
+                    data-isActive="false" data-shoulder data-isWide="false" data-astro-cid-5dcumwjq="true">
+                    <a href="/account/subscriptions/" target="_self" style="color: #000000;"
+                      data-astro-cid-5dcumwjq="true" class="Btn M_S transparent">
+                      <span class="frame" style="background-color: transparent; border-color: #000000;"
+                        data-astro-cid-5dcumwjq></span>
+                      <span class="text" data-astro-cid-5dcumwjq>もどる</span>
+                    </a>
+                  </btn-component>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <script type="module" src="/assets/js/NotificationBanners.ts.js"></script>
+      <notification-banners data-astro-cid-ml7ye4mw="true">
+        <div class="notification-banner" data-astro-cid-ml7ye4mw>
+          <p style="color: #000;" data-astro-cid-ml7ye4mw>お届け希望時間帯を更新しました。</p>
+          <div class="close" data-astro-cid-ml7ye4mw>
+            <svg viewBox="0 0 16 16" fill="none" data-astro-cid-ml7ye4mw>
+              <path d="M1.29297 13.293L13.293 1.29297L14.7072 2.70718L2.70718 14.7072L1.29297 13.293Z"
+                data-astro-cid-ml7ye4mw></path>
+              <path d="M2.70718 1.29297L14.7072 13.293L13.293 14.7072L1.29297 2.70718L2.70718 1.29297Z"
+                data-astro-cid-ml7ye4mw></path>
+            </svg>
+          </div>
+        </div>
+      </notification-banners>
     </div>
     <footer class="Footer" data-astro-cid-sz7xmlte>
       <div class="inner" data-astro-cid-sz7xmlte>

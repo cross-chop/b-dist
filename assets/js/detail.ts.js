@@ -1,0 +1,1 @@
+class s extends HTMLElement{constructor(){super();const e=this.querySelector("form"),t=this.querySelector("select");!t||!e||t.addEventListener("change",c=>{e.submit()})}}customElements.define("delivary-time",s);

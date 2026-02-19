@@ -50,6 +50,11 @@ ${renderComponent($$result, "mypage-menu", "mypage-menu", { "data-astro-cid-jtze
           <span data-astro-cid-jtzeilfp>購入履歴</span>
         </a>
       </li>
+      <li${addAttribute(["item", { isActive: currentIndex === 6 }], "class:list")} data-astro-cid-jtzeilfp>
+        <a href="/account/subscriptions/" data-astro-cid-jtzeilfp>
+          <span data-astro-cid-jtzeilfp>継続中の定期購入</span>
+        </a>
+      </li>
     </ul>
   </div>
 ` })}`;
