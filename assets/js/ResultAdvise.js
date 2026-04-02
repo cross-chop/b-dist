@@ -1,7 +1,7 @@
 import { c as createComponent, d as createAstro, b as renderScript, r as renderComponent, a as renderTemplate, m as maybeRenderHead, e as addAttribute } from './astro/server.js';
 import 'kleur/colors';
 import { $ as $$SecondPageTitle } from './SecondPageTitle.js';
-/* empty css                           */
+/* empty css                             */
 
 const $$Astro = createAstro();
 const $$ResultAdvise = createComponent(($$result, $$props, $$slots) => {
