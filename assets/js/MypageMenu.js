@@ -55,6 +55,11 @@ ${renderComponent($$result, "mypage-menu", "mypage-menu", { "data-astro-cid-jtze
           <span data-astro-cid-jtzeilfp>継続中の定期購入</span>
         </a>
       </li>
+      <li${addAttribute(["item", { isActive: currentIndex === 7 }], "class:list")} data-astro-cid-jtzeilfp>
+        <a href="/account/type-check/" data-astro-cid-jtzeilfp>
+          <span data-astro-cid-jtzeilfp>問診結果一覧</span>
+        </a>
+      </li>
     </ul>
   </div>
 ` })}`;
