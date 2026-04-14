@@ -3,6 +3,7 @@ import 'kleur/colors';
 /* empty css           */
 import { $ as $$Column } from './Column.js';
 import { a as $$Btn } from './Layout.js';
+import { $ as $$SubscriptionNotice } from './SubscriptionNotice.js';
 
 const $$Astro$2 = createAstro();
 const $$InputNumber = createComponent(($$result, $$props, $$slots) => {
@@ -89,31 +90,7 @@ const $$Cart = createComponent(($$result, $$props, $$slots) => {
             </div>
 
             <div class="payment" data-astro-cid-atha5qgx>
-              <div class="subscription" data-astro-cid-atha5qgx>
-                <p class="note" data-astro-cid-atha5qgx>※定期購入の場合は、会員登録またはログインが必要です。</p>
-                <div class="section" data-astro-cid-atha5qgx>
-                  <p data-astro-cid-atha5qgx>
-                    【定期購入に関するご確認事項】
-                    <br data-astro-cid-atha5qgx>
-                    ビーボ酸化マグネシウム錠 360錠 ご購入者の方
-                    <br data-astro-cid-atha5qgx>
-                    ※ご注文後、2ヶ月に1袋（360錠）お届けいたします。
-                    <br data-astro-cid-atha5qgx>
-                    ※2回目以降は、商品代を2,500円のお支払いです。送料はかかりません（当社負担）。
-                    <br data-astro-cid-atha5qgx>
-                    ※初回はご注文後すぐに決済され、2回目は初回決済日の約2ヶ月後に決済されます。
-                    <br data-astro-cid-atha5qgx>
-                    <br data-astro-cid-atha5qgx>
-                    共通する事項
-                    <br data-astro-cid-atha5qgx>
-                    ※ご注文決済完了後、5日以内に発送いたします。代金引換の場合は、当社が定める方法によるご注文後、5日以内に発送いたします。
-                    <br data-astro-cid-atha5qgx>
-                    ※ご解約は2回目の商品受け取り後にいつでもご解約可能です（それまでは解約不可）。決済予定日前日までにご解約ください。
-                    <br data-astro-cid-atha5qgx>
-                    キャンセル・取引条件は<a href="/refund/" data-astro-cid-atha5qgx>こちら</a>をご確認ください。
-                  </p>
-                </div>
-              </div>
+              ${renderComponent($$result4, "SubscriptionNotice", $$SubscriptionNotice, { "note": true, "data-astro-cid-atha5qgx": true })}
               <div class="section" data-astro-cid-atha5qgx>
                 <h3 class="title" data-astro-cid-atha5qgx>Amazonアカウントでお支払い</h3>
                 <div class="amazon" data-astro-cid-atha5qgx>
