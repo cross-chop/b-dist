@@ -1,6 +1,6 @@
 import { c as createComponent, d as createAstro, b as renderScript, r as renderComponent, a as renderTemplate, m as maybeRenderHead, e as addAttribute } from './astro/server.js';
 import 'kleur/colors';
-/* empty css                           */
+/* empty css                             */
 
 const $$Astro = createAstro();
 const $$ResultBanner = createComponent(async ($$result, $$props, $$slots) => {
