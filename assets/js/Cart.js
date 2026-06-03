@@ -1,13 +1,13 @@
 import { c as createComponent, d as createAstro, b as renderScript, r as renderComponent, a as renderTemplate, m as maybeRenderHead, F as Fragment } from './astro/server.js';
 import 'kleur/colors';
 /* empty css           */
-import { $ as $$Column } from './Column.js';
 import { a as $$Btn } from './Layout.js';
+import { $ as $$Column } from './Column.js';
 import { $ as $$SubscriptionNotice } from './SubscriptionNotice.js';
 
-const $$Astro$2 = createAstro();
+const $$Astro$3 = createAstro();
 const $$InputNumber = createComponent(($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$2, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$3, $$props, $$slots);
   Astro2.self = $$InputNumber;
   const { disabled = false } = Astro2.props;
   return renderTemplate`${renderScript($$result, "/Users/bofft/Works/bebo/src/components/InputNumber.astro?astro&type=script&index=0&lang.ts")}
@@ -19,6 +19,58 @@ ${renderComponent($$result, "input-number", "input-number", { "class": disabled 
 ` })}`;
 }, "/Users/bofft/Works/bebo/src/components/InputNumber.astro", void 0);
 
+const $$Astro$2 = createAstro();
+const $$RecommendItem = createComponent(($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro$2, $$props, $$slots);
+  Astro2.self = $$RecommendItem;
+  return renderTemplate`${maybeRenderHead()}<div class="RecommendItem" data-astro-cid-5cyw2xya>
+  <div class="section" data-astro-cid-5cyw2xya>
+    <h3 data-astro-cid-5cyw2xya>あなたにおすすめの商品はこちら</h3>
+    <div class="inner" data-astro-cid-5cyw2xya>
+      <div class="image" data-astro-cid-5cyw2xya><img src="/assets/img/_dummy/bio-three-hi.png" alt="" data-astro-cid-5cyw2xya></div>
+      <div class="info" data-astro-cid-5cyw2xya>
+        <div class="title" data-astro-cid-5cyw2xya>ビオスリー錠</div>
+        <div class="meta" data-astro-cid-5cyw2xya>
+          <div class="badges" data-astro-cid-5cyw2xya>
+            <div class="badge" data-astro-cid-5cyw2xya><span data-astro-cid-5cyw2xya>指定医薬部外品</span></div>
+            <div class="maker" data-astro-cid-5cyw2xya>（アリナミン製薬）</div>
+          </div>
+          <span class="price" data-astro-cid-5cyw2xya>(48包)¥3,200</span>
+        </div>
+      </div>
+      <div class="buttons" data-astro-cid-5cyw2xya>
+        ${renderComponent($$result, "Btn", $$Btn, { "text": "\u30AB\u30FC\u30C8\u306B\u5165\u308C\u308B", "size": "M_L", "href": "/cart/", "type": "solid", "color": "#FF6B4A", "gradient": "linear-gradient(90deg, #FF6B4A, #FFBB8A, #FF6B4A)", "data-astro-cid-5cyw2xya": true }, { "default": ($$result2) => renderTemplate`
+          <img class="icnCart" src="/assets/img/common/icn_cart.svg" alt="カート" data-astro-cid-5cyw2xya>
+        ` })}
+        ${renderComponent($$result, "Btn", $$Btn, { "text": "\u3082\u3063\u3068\u8A73\u3057\u304F\u898B\u308B", "size": "M", "href": `/product/bio-three-hi/`, "type": "outline", "color": "#FF6B4A", "data-astro-cid-5cyw2xya": true })}
+      </div>
+    </div>
+  </div>
+  <div class="section" data-astro-cid-5cyw2xya>
+    <h3 data-astro-cid-5cyw2xya>あなたにおすすめの商品はこちら</h3>
+    <div class="inner" data-astro-cid-5cyw2xya>
+      <div class="image" data-astro-cid-5cyw2xya><img src="/assets/img/_dummy/mgo_360.png" alt="" data-astro-cid-5cyw2xya></div>
+      <div class="info" data-astro-cid-5cyw2xya>
+        <div class="title" data-astro-cid-5cyw2xya>ビーボ酸化マグネシウム錠</div>
+        <div class="meta" data-astro-cid-5cyw2xya>
+          <div class="badges" data-astro-cid-5cyw2xya>
+            <div class="badge" data-astro-cid-5cyw2xya><span data-astro-cid-5cyw2xya>第3類医薬品</span></div>
+            <div class="maker" data-astro-cid-5cyw2xya>（エムボックス）</div>
+          </div>
+          <span class="price" data-astro-cid-5cyw2xya>(360錠) ¥2,500</span>
+        </div>
+      </div>
+      <div class="buttons" data-astro-cid-5cyw2xya>
+        ${renderComponent($$result, "Btn", $$Btn, { "text": "\u30AB\u30FC\u30C8\u306B\u5165\u308C\u308B", "size": "M_L", "href": "/cart/", "type": "solid", "color": "#FF6B4A", "gradient": "linear-gradient(90deg, #0077FF, #88C8F0, #0077FF)", "data-astro-cid-5cyw2xya": true }, { "default": ($$result2) => renderTemplate`
+          <img class="icnCart" src="/assets/img/common/icn_cart.svg" alt="カート" data-astro-cid-5cyw2xya>
+        ` })}
+        ${renderComponent($$result, "Btn", $$Btn, { "text": "\u3082\u3063\u3068\u8A73\u3057\u304F\u898B\u308B", "size": "M", "href": `/product/mgo/`, "type": "outline", "color": "#88C8F0", "data-astro-cid-5cyw2xya": true })}
+      </div>
+    </div>
+  </div>
+</div>`;
+}, "/Users/bofft/Works/bebo/src/components/RecommendItem.astro", void 0);
+
 const $$Astro$1 = createAstro();
 const $$CartItems = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$1, $$props, $$slots);
@@ -28,6 +80,7 @@ const $$CartItems = createComponent(($$result, $$props, $$slots) => {
   <!--! 商品がない時 -->
   ${length === 0 && renderTemplate`<div class="Cart_empty" data-astro-cid-2ba5mcll>
         <p data-astro-cid-2ba5mcll>現在カートに商品は入っていません</p>
+        ${renderComponent($$result, "RecommendItem", $$RecommendItem, { "data-astro-cid-2ba5mcll": true })}
       </div>`}
   <!--! /商品がない時 -->
 
@@ -117,6 +170,7 @@ const $$Cart = createComponent(($$result, $$props, $$slots) => {
                     ${renderComponent($$result4, "Btn", $$Btn, { "tag": "a", "href": "/checkout/sign-in/", "text": "\u30ED\u30B0\u30A4\u30F3\u3057\u3066\u8CFC\u5165", "size": "M_S", "type": "solid", "color": "#000000", "data-astro-cid-atha5qgx": true })}
                   </div>`}
               </div>
+              ${renderComponent($$result4, "RecommendItem", $$RecommendItem, { "data-astro-cid-atha5qgx": true })}
             </div>
           ` })}`}<div class="continue" data-astro-cid-atha5qgx>
         ${renderComponent($$result3, "Btn", $$Btn, { "tag": "a", "href": "/", "text": "\u304A\u8CB7\u3044\u7269\u3092\u7D9A\u3051\u308B", "size": "M_S", "type": "transparent", "color": "#000000", "data-astro-cid-atha5qgx": true })}
