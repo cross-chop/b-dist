@@ -88,7 +88,6 @@
           </ul>
           <div class="sp btns" data-astro-cid-3ef6ksr2>
             <div class="btn_login" data-astro-cid-3ef6ksr2>
-              <script type="module" src="/assets/js/Btn.ts.js"></script>
               <btn-component data-href="/sign-in/" data-target="_self" data-size="M" data-type="transparent"
                 data-color="#000" data-tag="a" data-disabled="false" data-isActive="false" data-shoulder
                 data-isWide="false" data-astro-cid-5dcumwjq="true">
@@ -164,424 +163,633 @@
       </header>
     </header-component>
     <div class="Container" style="">
-      <div class="ResultContent">
-        <main>
-          <header>
-            <h1 class="SecondPageTitle" data-astro-cid-6dffnzmc>
-              <span data-astro-cid-6dffnzmc>あなたの便秘タイプ</span>
-            </h1>
-            <p>あなたは「けいれん性便秘」の傾向があります。</p>
-            <div class="thumb">
-              <img src="/assets/img/type-check/result/spastic-constipation.webp" alt="">
-              <img class="bebo-pink" src="/assets/img/type-check/result/bebo_pink.svg" alt="">
+      <div class="ResultContent" data-astro-cid-tju4poqs>
+        <div class="content" data-astro-cid-tju4poqs>
+          <div class="ResultDiagnosis ${drugType}" style="--color: #4092DE" data-astro-cid-74l6gkf4>
+            <div class="head" data-astro-cid-74l6gkf4>
+              <h1 class="SecondPageTitle" data-astro-cid-6dffnzmc>
+                <span data-astro-cid-6dffnzmc>あなたの便秘タイプ</span>
+              </h1>
+              <h1 class="summary" data-astro-cid-74l6gkf4>あなたは<br class="sp" />「<span class="type">けいれん性便秘</span>」の<br
+                  class="sp" />傾向があります。</h1>
             </div>
-          </header>
-          <div class="main-body">
-            <section>
-              <h2><span>けいれん性便秘とは？ </span></h2>
-              <p>
-                このタイプの便秘は、ストレスや精神的な緊張などによって腸が過剰に反応し、けいれんするように動いてしまうことで、便がスムーズに流れなくなるものです。腸がぎゅっと縮こまってしまうため、便が途中で止まり、コロコロとした小さな便になりやすくなります。<br>
-                「お腹が張る」「ガスがたまりやすい」「便が出てもスッキリしない」などの症状が見られやすく、人によっては下痢と便秘を繰り返すケースもあります。神経が細かくて緊張しやすい方、仕事や家庭でストレスを感じている方に多く見られる傾向があります。
-              </p>
-              <div class="note">
-                ※本チェックは医療診断ではありません。症状が長引く場合は医師にご相談ください。<br>
-                ※自己判断に不安がある場合は、医師または薬剤師にご相談ください。
+            <!-- キャラクター＋吹き出し -->
+            <div class="character" data-astro-cid-74l6gkf4>
+              <div class="balloon" data-astro-cid-74l6gkf4>
+                <p data-astro-cid-74l6gkf4><span class="hl">ストレスや緊張</span><span>で、</span><span
+                    class="hl">お腹が敏感</span><span>になりやすいタイプだね！</span></p>
+                <div class="line" data-astro-cid-74l6gkf4></div>
+                <p data-astro-cid-74l6gkf4><span>お腹に</span><span class="hl">やさしいケア</span><span>で、</span><span
+                    class="hl">腸のリズムを整えて</span><span>いくのがおすすめ◎</span></p>
               </div>
-            </section>
+              <div class="chara" data-astro-cid-74l6gkf4>
+                <result-character class="ResultCharacter" data-character="mg"
+                  style="--result-character-color:#88C8F0;--result-character-eye-left:43%;--result-character-eye-top:17.066666666666666%;"
+                  data-astro-cid-amzcvyo4="true">
+                  <svg class="shape" viewBox="0 0 200 120" fill="none" data-astro-cid-amzcvyo4>
+                    <path class="base"
+                      d="M100.445 120C72.078 120 49 100.73 49 77.0432C49 53.3567 65.2988 36.1206 79.6774 21.0032C85.7178 14.6536 91.5955 8.47321 96.0868 2.08454C98.0395 -0.694846 102.846 -0.694846 104.802 2.08454C109.294 8.47321 115.171 14.6536 121.212 21.0032C135.594 36.1238 151.889 53.259 151.889 77.0432C151.889 100.827 128.811 120 100.445 120Z"
+                      data-astro-cid-amzcvyo4></path>
+                  </svg>
+                  <div class="eye" data-astro-cid-amzcvyo4>
+                    <div class="eye1" data-astro-cid-amzcvyo4></div>
+                    <div class="eye2" data-astro-cid-amzcvyo4></div>
+                    <div class="eye3" data-astro-cid-amzcvyo4></div>
+                    <div class="eye4" data-astro-cid-amzcvyo4></div>
+                    <div class="eye5" data-astro-cid-amzcvyo4></div>
+                  </div>
+                </result-character>
+                <script type="module" src="/assets/js/ResultCharacter.ts.js"></script>
+              </div>
+            </div>
+            <!-- 〜とは？カード -->
+            <div class="aboutCard" data-astro-cid-74l6gkf4>
+              <div class="inner" data-astro-cid-74l6gkf4>
+                <div class="illust" data-astro-cid-74l6gkf4><img
+                    src="/assets/img/type-check/result/spastic-constipation.webp" alt="" data-astro-cid-74l6gkf4></div>
+                <div class="body" data-astro-cid-74l6gkf4>
+                  <div class="text" data-astro-cid-74l6gkf4>
+                    <h2 data-astro-cid-74l6gkf4>けいれん性便秘とは？</h2>
+                    <p data-astro-cid-74l6gkf4>ストレスや緊張などで腸が過剰に反応し、便が進みにくくなるタイプです。特に以下のような症状に注意です。</p>
+                  </div>
+                  <ul class="checkList" data-astro-cid-74l6gkf4>
+                    <li data-astro-cid-74l6gkf4>
+                      <span class="icn" data-astro-cid-74l6gkf4>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" data-astro-cid-74l6gkf4>
+                          <path
+                            d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16Z"
+                            fill="#60C76D" data-astro-cid-74l6gkf4></path>
+                          <path d="M5 7.66667L7.33333 10L11.3333 6" fill="#60C76D" data-astro-cid-74l6gkf4></path>
+                          <path d="M5 7.66667L7.33333 10L11.3333 6" stroke="white" stroke-width="2"
+                            data-astro-cid-74l6gkf4></path>
+                        </svg>
+                      </span>
+                      <span class="txt" data-astro-cid-74l6gkf4>コロコロした小さな便が出やすい</span>
+                    </li>
+                    <li data-astro-cid-74l6gkf4>
+                      <span class="icn" data-astro-cid-74l6gkf4>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" data-astro-cid-74l6gkf4>
+                          <path
+                            d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16Z"
+                            fill="#60C76D" data-astro-cid-74l6gkf4></path>
+                          <path d="M5 7.66667L7.33333 10L11.3333 6" fill="#60C76D" data-astro-cid-74l6gkf4></path>
+                          <path d="M5 7.66667L7.33333 10L11.3333 6" stroke="white" stroke-width="2"
+                            data-astro-cid-74l6gkf4></path>
+                        </svg>
+                      </span>
+                      <span class="txt" data-astro-cid-74l6gkf4>お腹が張りやすい・ガスがたまりやすい</span>
+                    </li>
+                    <li data-astro-cid-74l6gkf4>
+                      <span class="icn" data-astro-cid-74l6gkf4>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" data-astro-cid-74l6gkf4>
+                          <path
+                            d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16Z"
+                            fill="#60C76D" data-astro-cid-74l6gkf4></path>
+                          <path d="M5 7.66667L7.33333 10L11.3333 6" fill="#60C76D" data-astro-cid-74l6gkf4></path>
+                          <path d="M5 7.66667L7.33333 10L11.3333 6" stroke="white" stroke-width="2"
+                            data-astro-cid-74l6gkf4></path>
+                        </svg>
+                      </span>
+                      <span class="txt" data-astro-cid-74l6gkf4>排便後もスッキリしない</span>
+                    </li>
+                    <li data-astro-cid-74l6gkf4>
+                      <span class="icn" data-astro-cid-74l6gkf4>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" data-astro-cid-74l6gkf4>
+                          <path
+                            d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16Z"
+                            fill="#60C76D" data-astro-cid-74l6gkf4></path>
+                          <path d="M5 7.66667L7.33333 10L11.3333 6" fill="#60C76D" data-astro-cid-74l6gkf4></path>
+                          <path d="M5 7.66667L7.33333 10L11.3333 6" stroke="white" stroke-width="2"
+                            data-astro-cid-74l6gkf4></path>
+                        </svg>
+                      </span>
+                      <span class="txt" data-astro-cid-74l6gkf4>ストレスでお腹の調子が変わりやすい</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p class="note" data-astro-cid-74l6gkf4>
+                ※本チェックは医療診断ではありません。症状が長引く場合は医師にご相談ください。<br />※自己判断に不安がある場合は、医師または薬剤師にご相談ください。</p>
+            </div>
           </div>
-        </main>
-        <div class="recommend">
-          <h1 class="SecondPageTitle" data-astro-cid-6dffnzmc>
-            <span data-astro-cid-6dffnzmc>おすすめの市販薬</span>
-          </h1>
-          <div class="sections">
-            <section>
-              <h3 class="title">
-                <span class="number">01</span>
-                <span class="name">整腸剤</span>
-              </h3>
-              <div class="illust">
-                <img src="/assets/img/type-check/result/illust_probiotics.webp" alt="">
+          <div class="ResultRecommend" style="--color: #88C8F0; --text-color: #88C8F0" data-astro-cid-gmbn233k>
+            <!-- おすすめ市販薬（青枠） -->
+            <div class="recommend" data-astro-cid-gmbn233k>
+              <div class="rHead" data-astro-cid-gmbn233k>
+                <span class="badge" data-astro-cid-gmbn233k>まずは<br data-astro-cid-gmbn233k>これ！</span>
+                <p class="rTitle" data-astro-cid-gmbn233k>あなたの便秘タイプに<br class="sp" />最もおすすめ！<br />「酸化マグネシウム」</p>
               </div>
-              <div class="description">
-                <h4>腸内バランスを味方に。自然なお通じ</h4>
-                <div class="line"></div>
-                <p>
-                  腸内の善玉菌を補ってバランスを整える整腸剤です。腸が本来のリズムを取り戻すようサポートし、便秘や下痢の予防に役立ちます。
-                </p>
-                <script type="module" src="/assets/js/ResultAccordion.ts.js"></script>
-                <result-accordion-component data-astro-cid-sltyajid="true">
-                  <div class="result-accordion" data-astro-cid-sltyajid>
-                    <div class="header" data-astro-cid-sltyajid>
-                      <span data-astro-cid-sltyajid>詳細を見る</span>
-                      <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg"
-                        data-astro-cid-sltyajid>
-                        <path d="M12 1.24219L6.5 6.74219L1 1.24219" stroke="black" stroke-width="1.375"
-                          stroke-linecap="square" data-astro-cid-sltyajid></path>
-                      </svg>
-                    </div>
-                    <div class="crop" data-astro-cid-sltyajid>
-                      <div class="inner" data-astro-cid-sltyajid>
-                        <section>
-                          <h4>●効果</h4>
-                          <ul>
-                            <li><span>善玉菌を増やし腸内バランスを整えることで、ガスやお腹の張りの軽減にも</span></li>
-                            <li><span>続けて飲むことで排便のリズムが安定</span></li>
-                            <li><span>ゆるやかに腸内環境を改善</span></li>
-                          </ul>
-                        </section>
-                        <section>
-                          <h4>●こんな方におすすめ</h4>
-                          <ul>
-                            <li><span>毎日自然なお通じを目指したい方</span></li>
-                            <li><span>ストレスや食生活の乱れでお腹の調子が不安定な方</span></li>
-                            <li><span>便秘と下痢を繰り返すタイプの方</span></li>
-                            <li><span>刺激の強い便秘薬が合わない方、お腹が弱い方</span></li>
-                            <li><span>妊娠中・高齢者・お子さまなど、やさしい作用のお薬を求める方</span></li>
-                          </ul>
-                        </section>
-                        <section>
-                          <h4>●注意事項</h4>
-                          <ul>
-                            <li><span>即効性はなく、数日〜1週間の継続が必要です</span></li>
-                            <li><span>医薬品とサプリが混在しているため、成分や表示をよく確認しましょう</span></li>
-                          </ul>
-                        </section>
-                      </div>
-                    </div>
-                  </div>
-                </result-accordion-component>
-              </div>
-              <div class="items">
-                <h4>●このタイプの市販薬</h4>
+              <div class="rBody" data-astro-cid-gmbn233k>
                 <script type="module" src="/assets/js/ProductItem.ts.js"></script>
-                <product-item-component class="ProductItem " data-product-id="shin-biofermin-s"
-                  data-has-variations="false" data-astro-cid-nwhxhul2="true">
-                  <div class="thumb" data-astro-cid-nwhxhul2>
-                    <a href="/product/shin-biofermin-s/" data-astro-cid-nwhxhul2>
-                      <img src="/assets/img/products/shin-biofermin-s.webp" alt="" data-astro-cid-nwhxhul2>
-                    </a>
-                  </div>
-                  <div class="body" data-astro-cid-nwhxhul2>
-                    <div class="header" data-astro-cid-nwhxhul2>
-                      <h3 class="title" data-astro-cid-nwhxhul2>新ビオフェルミンS錠</h3>
-                      <div class="info" data-astro-cid-nwhxhul2>
-                        <div class="typeAndCompany" data-astro-cid-nwhxhul2>
-                          <div class="type" data-astro-cid-nwhxhul2>
-                            <span data-astro-cid-nwhxhul2>指定医薬部外品</span>
-                          </div>
-                          <div class="company" data-astro-cid-nwhxhul2>（大正製薬）</div>
-                        </div>
-                        <div class="capacityAndPrice" data-astro-cid-nwhxhul2>
-                          <div class="capacity" data-astro-cid-nwhxhul2>(540錠)</div>
-                          <div class="price" data-astro-cid-nwhxhul2>¥3,300</div>
-                        </div>
-                      </div>
-                    </div>
-                    <p class="description" data-astro-cid-nwhxhul2>
-                      ビフィズス菌と2種類の乳酸菌が腸内環境を整える整腸剤。便秘や下痢のどちらにも使え、毎日の腸活サポートにも役立ちます。</p>
-                    <div class="btns" data-astro-cid-nwhxhul2>
-                      <btn-component data-href="/product/shin-biofermin-s/" data-target="_self" data-size="M"
-                        data-type="solid" data-color="#828195" data-tag="a" data-disabled="false" data-isActive="false"
-                        data-shoulder data-isWide="false" data-astro-cid-5dcumwjq="true">
-                        <a href="/product/shin-biofermin-s/" target="_self" style="color: #fff;"
-                          data-astro-cid-5dcumwjq="true" class="Btn M solid">
-                          <span class="frame" style="background-color: #828195;" data-astro-cid-5dcumwjq></span>
-                          <span class="text" data-astro-cid-5dcumwjq>もっと詳しく見る</span>
-                        </a>
-                      </btn-component>
-                      <btn-component data-href="/cart/" data-target="_self" data-size="M_L" data-type="solid"
-                        data-color="#000" data-tag="a" data-disabled="false" data-isActive="false" data-shoulder
-                        data-isWide="false" data-astro-cid-5dcumwjq="true">
-                        <a href="/cart/" target="_self" style="color: #fff;" data-astro-cid-5dcumwjq="true"
-                          class="Btn M_L solid">
-                          <span class="frame" style="background-color: #000;" data-astro-cid-5dcumwjq></span>
-                          <span class="text" data-astro-cid-5dcumwjq>カートに入れる</span>
-                          <img class="icnCart" src="/assets/img/common/icn_cart.svg" alt="カート" data-astro-cid-nwhxhul2>
-                        </a>
-                      </btn-component>
-                    </div>
-                  </div>
-                </product-item-component>
-                <product-item-component class="ProductItem " data-product-id="bio-three-hi" data-has-variations="false"
+                <product-item-component class="ProductItem  isBigCartBtn isOrder" data-product-id="mgo"
                   data-astro-cid-nwhxhul2="true">
                   <div class="thumb" data-astro-cid-nwhxhul2>
-                    <a href="/product/bio-three-hi/" data-astro-cid-nwhxhul2>
-                      <img src="/assets/img/products/bio-three-hi.webp" alt="" data-astro-cid-nwhxhul2>
+                    <a href="/product/mgo/" data-astro-cid-nwhxhul2>
+                      <img src="/assets/img/products/mgo_1.webp" alt="" class="variation-image" data-variation-index="0"
+                        style="opacity: 1;" data-astro-cid-nwhxhul2><img src="/assets/img/products/mgo_2.webp" alt=""
+                        class="variation-image" data-variation-index="1" style="opacity: 0;"
+                        data-astro-cid-nwhxhul2><img src="/assets/img/products/mgo_3.webp" alt=""
+                        class="variation-image" data-variation-index="2" style="opacity: 0;"
+                        data-astro-cid-nwhxhul2><img src="/assets/img/products/mgo_4.webp" alt=""
+                        class="variation-image" data-variation-index="3" style="opacity: 0;" data-astro-cid-nwhxhul2>
                     </a>
                   </div>
                   <div class="body" data-astro-cid-nwhxhul2>
                     <div class="header" data-astro-cid-nwhxhul2>
-                      <h3 class="title" data-astro-cid-nwhxhul2>ビオスリー錠</h3>
+                      <h3 class="title" data-astro-cid-nwhxhul2>ビーボ酸化マグネシウム錠</h3>
                       <div class="info" data-astro-cid-nwhxhul2>
                         <div class="typeAndCompany" data-astro-cid-nwhxhul2>
                           <div class="type" data-astro-cid-nwhxhul2>
-                            <span data-astro-cid-nwhxhul2>指定医薬部外品</span>
+                            <span data-astro-cid-nwhxhul2>第3類医薬品</span>
                           </div>
-                          <div class="company" data-astro-cid-nwhxhul2>（アリナミン製薬）</div>
+                          <div class="company" data-astro-cid-nwhxhul2>（エムボックス）</div>
                         </div>
                         <div class="capacityAndPrice" data-astro-cid-nwhxhul2>
-                          <div class="capacity" data-astro-cid-nwhxhul2>(270錠)</div>
-                          <div class="price" data-astro-cid-nwhxhul2>¥2,900</div>
+                          <div class="capacityAndPriceVariation" data-astro-cid-nwhxhul2>
+                            <div class="variation-text variation-text-placeholder" aria-hidden="true"
+                              data-astro-cid-nwhxhul2>
+                              <div class="capacity" data-astro-cid-nwhxhul2>(360錠)</div>
+                              <div class="price" data-astro-cid-nwhxhul2>¥2,500</div>
+                            </div>
+                            <div class="variation-text" data-variation-index="0" style="opacity: 1;"
+                              data-astro-cid-nwhxhul2>
+                              <div class="capacity" data-astro-cid-nwhxhul2>(360錠)</div>
+                              <div class="price" data-astro-cid-nwhxhul2>¥2,500</div>
+                            </div>
+                            <div class="variation-text" data-variation-index="1" style="opacity: 0;"
+                              data-astro-cid-nwhxhul2>
+                              <div class="capacity" data-astro-cid-nwhxhul2>(90錠)</div>
+                              <div class="price" data-astro-cid-nwhxhul2>¥1,500</div>
+                            </div>
+                            <div class="variation-text" data-variation-index="2" style="opacity: 0;"
+                              data-astro-cid-nwhxhul2>
+                              <div class="capacity" data-astro-cid-nwhxhul2>(42錠)</div>
+                              <div class="price" data-astro-cid-nwhxhul2>¥980</div>
+                            </div>
+                            <div class="variation-text" data-variation-index="3" style="opacity: 0;"
+                              data-astro-cid-nwhxhul2>
+                              <div class="capacity" data-astro-cid-nwhxhul2>(360錠)</div>
+                              <div class="price" data-astro-cid-nwhxhul2>¥2,500</div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
-                    <p class="description" data-astro-cid-nwhxhul2>3種の善玉菌が腸に届き、バランスを整える整腸剤。便秘や軟便など腸の不調を改善し、穏やかに働きます。</p>
+                    <div class="variations" data-astro-cid-nwhxhul2>
+                      <button type="button" class="variation-btn" data-variation-index="0" data-active="true"
+                        data-astro-cid-nwhxhul2>
+                        <div class="variation-btn-content" data-astro-cid-nwhxhul2>
+                          <div class="variation-btn-capacity" data-astro-cid-nwhxhul2>
+                            <span data-astro-cid-nwhxhul2>
+                              <span class="capacity" data-astro-cid-nwhxhul2>360錠</span>
+                            </span>
+                            <span class="days" data-astro-cid-nwhxhul2>（60日分）</span>
+                          </div>
+                          <div class="variation-btn-price" data-astro-cid-nwhxhul2>¥2,500</div>
+                        </div>
+                      </button><button type="button" class="variation-btn" data-variation-index="1" data-active="false"
+                        data-astro-cid-nwhxhul2>
+                        <div class="variation-btn-content" data-astro-cid-nwhxhul2>
+                          <div class="variation-btn-capacity" data-astro-cid-nwhxhul2>
+                            <span data-astro-cid-nwhxhul2>
+                              <span class="capacity" data-astro-cid-nwhxhul2>90錠</span>
+                            </span>
+                            <span class="days" data-astro-cid-nwhxhul2>（15日分）</span>
+                          </div>
+                          <div class="variation-btn-price" data-astro-cid-nwhxhul2>¥1,500</div>
+                        </div>
+                      </button><button type="button" class="variation-btn" data-variation-index="2" data-active="false"
+                        data-astro-cid-nwhxhul2>
+                        <div class="variation-btn-content" data-astro-cid-nwhxhul2>
+                          <div class="variation-btn-capacity" data-astro-cid-nwhxhul2>
+                            <span data-astro-cid-nwhxhul2>
+                              <span class="capacity" data-astro-cid-nwhxhul2>42錠</span>
+                            </span>
+                            <span class="days" data-astro-cid-nwhxhul2>（7日分）</span>
+                          </div>
+                          <div class="variation-btn-price" data-astro-cid-nwhxhul2>¥980</div>
+                        </div>
+                      </button><button type="button" class="variation-btn" data-variation-index="3" data-active="false"
+                        data-astro-cid-nwhxhul2>
+                        <div class="variation-btn-content" data-astro-cid-nwhxhul2>
+                          <div class="variation-btn-capacity" data-astro-cid-nwhxhul2>
+                            <span data-astro-cid-nwhxhul2>
+                              <span class="subscription" data-astro-cid-nwhxhul2>定期購入</span>
+                              <span class="capacity" data-astro-cid-nwhxhul2>360錠</span>
+                            </span>
+                            <span class="days" data-astro-cid-nwhxhul2>（60日分）</span>
+                          </div>
+                          <div class="variation-btn-price" data-astro-cid-nwhxhul2>初回 ¥2,250〜</div>
+                        </div>
+                      </button>
+                    </div>
                     <div class="btns" data-astro-cid-nwhxhul2>
-                      <btn-component data-href="/product/bio-three-hi/" data-target="_self" data-size="M"
-                        data-type="solid" data-color="#828195" data-tag="a" data-disabled="false" data-isActive="false"
-                        data-shoulder data-isWide="false" data-astro-cid-5dcumwjq="true">
-                        <a href="/product/bio-three-hi/" target="_self" style="color: #fff;"
-                          data-astro-cid-5dcumwjq="true" class="Btn M solid">
-                          <span class="frame" style="background-color: #828195;" data-astro-cid-5dcumwjq></span>
-                          <span class="text" data-astro-cid-5dcumwjq>もっと詳しく見る</span>
-                        </a>
-                      </btn-component>
                       <btn-component data-href="/cart/" data-target="_self" data-size="M_L" data-type="solid"
                         data-color="#000" data-tag="a" data-disabled="false" data-isActive="false" data-shoulder
                         data-isWide="false" data-astro-cid-5dcumwjq="true">
                         <a href="/cart/" target="_self" style="color: #fff;" data-astro-cid-5dcumwjq="true"
-                          class="Btn M_L solid">
-                          <span class="frame" style="background-color: #000;" data-astro-cid-5dcumwjq></span>
+                          class="Btn M_L solid hasGradient">
+                          <span class="frame"
+                            style="background-image: linear-gradient(90deg, #88C8F0 0%, #07F 50%, #88C8F0 100%);"
+                            data-astro-cid-5dcumwjq></span>
                           <span class="text" data-astro-cid-5dcumwjq>カートに入れる</span>
                           <img class="icnCart" src="/assets/img/common/icn_cart.svg" alt="カート" data-astro-cid-nwhxhul2>
+                        </a>
+                      </btn-component>
+                      <p class="description" data-astro-cid-nwhxhul2>
+                        酸化マグネシウムは、腸内水分を調整し、便をやわらかくし、自然なお通じを促すため、おなかが痛くなりにくいのが特徴です。十分な水分とともに服用することで確実な作用が期待できます。</p>
+                      <btn-component data-href="/product/mgo/" data-target="_self" data-size="M" data-type="outline"
+                        data-color="#88C8F0" data-tag="a" data-disabled="false" data-isActive="false" data-shoulder
+                        data-isWide="false" data-astro-cid-5dcumwjq="true">
+                        <a href="/product/mgo/" target="_self" style="color: #88C8F0;" data-astro-cid-5dcumwjq="true"
+                          class="Btn M outline">
+                          <span class="frame" style="background-color: #fff; border-color: #88C8F0;"
+                            data-astro-cid-5dcumwjq></span>
+                          <span class="text" data-astro-cid-5dcumwjq>もっと詳しく見る</span>
                         </a>
                       </btn-component>
                     </div>
                   </div>
                 </product-item-component>
               </div>
-            </section>
-            <section>
-              <h3 class="title">
-                <span class="number">02</span>
-                <span class="name">プランタゴ・オバタ種皮末</span>
-              </h3>
-              <div class="illust">
-                <img src="/assets/img/type-check/result/illust_plantago_ovata.webp" alt="">
+            </div>
+            <!-- なぜこのお薬がおすすめなの？ -->
+            <div class="why" data-astro-cid-gmbn233k>
+              <div class="inner" data-astro-cid-gmbn233k>
+                <div class="illust" data-astro-cid-gmbn233k><img src="/assets/img/type-check/result/illust_mgo.webp"
+                    alt="" data-astro-cid-gmbn233k></div>
+                <div class="body" data-astro-cid-gmbn233k>
+                  <h2 data-astro-cid-gmbn233k>なぜこのお薬がおすすめなの？</h2>
+                  <ul class="checkList" data-astro-cid-gmbn233k>
+                    <li data-astro-cid-gmbn233k>
+                      <span class="icn" data-astro-cid-gmbn233k>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" data-astro-cid-gmbn233k>
+                          <path
+                            d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16Z"
+                            fill="#60C76D" data-astro-cid-gmbn233k></path>
+                          <path d="M5 7.66667L7.33333 10L11.3333 6" fill="#60C76D" data-astro-cid-gmbn233k></path>
+                          <path d="M5 7.66667L7.33333 10L11.3333 6" stroke="white" stroke-width="2"
+                            data-astro-cid-gmbn233k></path>
+                        </svg>
+                      </span>
+                      <span class="txt" data-astro-cid-gmbn233k>水分を集めて、硬い便をやわらかくします。</span>
+                    </li>
+                    <li data-astro-cid-gmbn233k>
+                      <span class="icn" data-astro-cid-gmbn233k>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" data-astro-cid-gmbn233k>
+                          <path
+                            d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16Z"
+                            fill="#60C76D" data-astro-cid-gmbn233k></path>
+                          <path d="M5 7.66667L7.33333 10L11.3333 6" fill="#60C76D" data-astro-cid-gmbn233k></path>
+                          <path d="M5 7.66667L7.33333 10L11.3333 6" stroke="white" stroke-width="2"
+                            data-astro-cid-gmbn233k></path>
+                        </svg>
+                      </span>
+                      <span class="txt" data-astro-cid-gmbn233k>刺激を与えず、自然なお通じをサポート。</span>
+                    </li>
+                    <li data-astro-cid-gmbn233k>
+                      <span class="icn" data-astro-cid-gmbn233k>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" data-astro-cid-gmbn233k>
+                          <path
+                            d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16Z"
+                            fill="#60C76D" data-astro-cid-gmbn233k></path>
+                          <path d="M5 7.66667L7.33333 10L11.3333 6" fill="#60C76D" data-astro-cid-gmbn233k></path>
+                          <path d="M5 7.66667L7.33333 10L11.3333 6" stroke="white" stroke-width="2"
+                            data-astro-cid-gmbn233k></path>
+                        </svg>
+                      </span>
+                      <span class="txt" data-astro-cid-gmbn233k>毎日続けやすく、クセになりにくいのも特徴です。</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="description">
-                <h4>ふくらんで、やさしく押し出す。スッキリ習慣。</h4>
-                <div class="line"></div>
-                <p>
-                  プランタゴ・オバタは、植物由来の食物繊維です。水分を吸ってふくらみ、便をやわらかくして排便をサポート。腸を刺激せず、やさしく自然なお通じを促します。
-                </p>
-                <result-accordion-component data-astro-cid-sltyajid="true">
-                  <div class="result-accordion" data-astro-cid-sltyajid>
-                    <div class="header" data-astro-cid-sltyajid>
-                      <span data-astro-cid-sltyajid>詳細を見る</span>
-                      <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg"
-                        data-astro-cid-sltyajid>
-                        <path d="M12 1.24219L6.5 6.74219L1 1.24219" stroke="black" stroke-width="1.375"
-                          stroke-linecap="square" data-astro-cid-sltyajid></path>
-                      </svg>
-                    </div>
-                    <div class="crop" data-astro-cid-sltyajid>
-                      <div class="inner" data-astro-cid-sltyajid>
-                        <section>
-                          <h4>●効果</h4>
-                          <ul>
-                            <li><span>便をやわらかく・出やすくする</span></li>
-                            <li><span>自然なぜん動運動を助ける</span></li>
-                            <li><span>腸内環境の改善もサポート</span></li>
-                          </ul>
-                        </section>
-                        <section>
-                          <h4>●こんな方におすすめ</h4>
-                          <ul>
-                            <li><span>お腹が張る・便が硬い・出にくいと感じる方</span></li>
-                            <li><span>腸を強く刺激する便秘薬で腹痛を起こしたことがある方</span></li>
-                            <li><span>ストレスや体質で腸が過敏になりやすい方</span></li>
-                            <li><span>毎日でも使える、やさしい便秘薬を探している方</span></li>
-                          </ul>
-                        </section>
-                        <section>
-                          <h4>●注意事項</h4>
-                          <ul>
-                            <li><span>必ずコップ1杯以上の水で服用してください</span></li>
-                            <li><span>発酵によりガスや張りを感じることがあります（様子を見て調整を）</span></li>
-                            <li><span>腸閉塞・消化管狭窄のある方は使用を避けてください</span></li>
-                            <li><span>効果はゆっくりと数日かけて現れます</span></li>
-                          </ul>
-                        </section>
-                      </div>
+              <div class="detail" data-astro-cid-gmbn233k>
+                <span class="line" data-astro-cid-gmbn233k></span>
+                <div class="accordion" data-astro-cid-gmbn233k>
+                  <button type="button" class="toggle" aria-expanded="false" data-astro-cid-gmbn233k>
+                    <span class="label" data-astro-cid-gmbn233k>詳細を見る</span>
+                    <svg class="chev" viewBox="0 0 11 6" fill="none" data-astro-cid-gmbn233k>
+                      <path d="M1 1l4.5 4L10 1" stroke="#88C8F0" stroke-width="1.4" stroke-linecap="round"
+                        data-astro-cid-gmbn233k></path>
+                    </svg>
+                  </button>
+                  <div class="crop" data-astro-cid-gmbn233k>
+                    <div class="accordionBody" data-astro-cid-gmbn233k>
+                      <section data-astro-cid-gmbn233k>
+                        <h4 data-astro-cid-gmbn233k>●効果</h4>
+                        <ul data-astro-cid-gmbn233k>
+                          <li data-astro-cid-gmbn233k>
+                            <span data-astro-cid-gmbn233k>腸を動かさず、水分の力で排便をサポート</span>
+                          </li>
+                          <li data-astro-cid-gmbn233k>
+                            <span data-astro-cid-gmbn233k>服用後6〜12時間で効果。朝のお通じにも◎</span>
+                          </li>
+                          <li data-astro-cid-gmbn233k>
+                            <span data-astro-cid-gmbn233k>腹痛やクセが起きにくいやさしい作用</span>
+                          </li>
+                        </ul>
+                      </section>
+                      <section data-astro-cid-gmbn233k>
+                        <h4 data-astro-cid-gmbn233k>●こんな方におすすめ</h4>
+                        <ul data-astro-cid-gmbn233k>
+                          <li data-astro-cid-gmbn233k>
+                            <span data-astro-cid-gmbn233k>便が硬くて出にくい方</span>
+                          </li>
+                          <li data-astro-cid-gmbn233k>
+                            <span data-astro-cid-gmbn233k>腸の動きが弱くなってきた高齢者の方</span>
+                          </li>
+                          <li data-astro-cid-gmbn233k>
+                            <span data-astro-cid-gmbn233k>刺激性の便秘薬でお腹が痛くなる方</span>
+                          </li>
+                          <li data-astro-cid-gmbn233k>
+                            <span data-astro-cid-gmbn233k>長く使える安心な便秘薬を探している方</span>
+                          </li>
+                        </ul>
+                      </section>
+                      <section data-astro-cid-gmbn233k>
+                        <h4 data-astro-cid-gmbn233k>●注意事項</h4>
+                        <ul data-astro-cid-gmbn233k>
+                          <li data-astro-cid-gmbn233k>
+                            <span data-astro-cid-gmbn233k>水と一緒に飲むと効果が出やすくなります</span>
+                          </li>
+                          <li data-astro-cid-gmbn233k>
+                            <span data-astro-cid-gmbn233k>腎臓に持病がある方は、医師または薬剤師に相談してからご使用ください</span>
+                          </li>
+                          <li data-astro-cid-gmbn233k>
+                            <span data-astro-cid-gmbn233k>効果がない場合は、無理に量を増やさず、医療機関に相談してください</span>
+                          </li>
+                        </ul>
+                      </section>
                     </div>
                   </div>
-                </result-accordion-component>
+                </div>
+                <span class="line" data-astro-cid-gmbn233k></span>
               </div>
-              <div class="items">
-                <h4>●このタイプの市販薬</h4>
-                <product-item-component class="ProductItem " data-product-id="new-withone" data-has-variations="false"
-                  data-astro-cid-nwhxhul2="true">
-                  <div class="thumb" data-astro-cid-nwhxhul2>
-                    <a href="/product/new-withone/" data-astro-cid-nwhxhul2>
-                      <img src="/assets/img/products/new-withone.webp" alt="" data-astro-cid-nwhxhul2>
+            </div>
+          </div>
+          <script type="module" src="/assets/js/ResultRecommend.ts.js"></script>
+        </div>
+        <div class="bottom" data-astro-cid-tju4poqs>
+          <section class="ResultDailyCare" data-astro-cid-77tibwep>
+            <h2 class="title" data-astro-cid-77tibwep>一緒に取り入れたい<br class="sp" data-astro-cid-77tibwep>ケア</h2>
+            <div class="list" data-astro-cid-77tibwep>
+              <div class="card" style="--accent: #9FCF2D; --textColor: #63A808;" data-astro-cid-77tibwep>
+                <div class="info" data-astro-cid-77tibwep>
+                  <div class="thumb" data-astro-cid-77tibwep>
+                    <img src="/assets/img/products/new-withone.webp" alt="" data-astro-cid-77tibwep>
+                  </div>
+                  <div class="text" data-astro-cid-77tibwep>
+                    <div class="badge" data-astro-cid-77tibwep>
+                      <span data-astro-cid-77tibwep>スペシャルな日の<br class="sp" />ケア専用！</span>
+                    </div>
+                    <h3 class="name" data-astro-cid-77tibwep>新ウィズワン</h3>
+                    <span class="price" data-astro-cid-77tibwep>(48包)¥3,200</span>
+                  </div>
+                </div>
+                <div class="btn" data-astro-cid-77tibwep>
+                  <script type="module" src="/assets/js/Btn.ts.js"></script>
+                  <btn-component data-href="/product/new-withone/" data-target="_self" data-size="L" data-type="solid"
+                    data-color="#9FCF2D" data-tag="a" data-disabled="false" data-isActive="false" data-shoulder
+                    data-isWide="false" data-astro-cid-5dcumwjq="true">
+                    <a href="/product/new-withone/" target="_self" style="color: #fff;" data-astro-cid-5dcumwjq="true"
+                      class="Btn L solid hasGradient">
+                      <span class="frame"
+                        style="background-image: linear-gradient(90deg, #9FCF2D 0%, #339200 50%, #9FCF2D 100%);"
+                        data-astro-cid-5dcumwjq></span>
+                      <span class="text" data-astro-cid-5dcumwjq>もっと詳しく見る</span>
                     </a>
+                  </btn-component>
+                </div>
+              </div>
+              <div class="card" style="--accent: #0065D9; --textColor: #0065D9;" data-astro-cid-77tibwep>
+                <div class="info" data-astro-cid-77tibwep>
+                  <div class="thumb" data-astro-cid-77tibwep>
+                    <img src="/assets/img/products/bio-three-hi.webp" alt="" data-astro-cid-77tibwep>
                   </div>
-                  <div class="body" data-astro-cid-nwhxhul2>
-                    <div class="header" data-astro-cid-nwhxhul2>
-                      <h3 class="title" data-astro-cid-nwhxhul2>新ウィズワン</h3>
-                      <div class="info" data-astro-cid-nwhxhul2>
-                        <div class="typeAndCompany" data-astro-cid-nwhxhul2>
-                          <div class="type" data-astro-cid-nwhxhul2>
-                            <span data-astro-cid-nwhxhul2>第②類医薬品</span>
-                          </div>
-                          <div class="company" data-astro-cid-nwhxhul2>（ゼリア新薬）</div>
+                  <div class="text" data-astro-cid-77tibwep>
+                    <div class="badge" data-astro-cid-77tibwep>
+                      <span data-astro-cid-77tibwep>日頃の腸活に<br class="sp" />おすすめ</span>
+                    </div>
+                    <h3 class="name" data-astro-cid-77tibwep>ビオスリーHi錠</h3>
+                    <span class="price" data-astro-cid-77tibwep>(270錠)¥2,900</span>
+                  </div>
+                </div>
+                <div class="btn" data-astro-cid-77tibwep>
+                  <btn-component data-href="/product/bio-three-hi/" data-target="_self" data-size="L" data-type="solid"
+                    data-color="#0065D9" data-tag="a" data-disabled="false" data-isActive="false" data-shoulder
+                    data-isWide="false" data-astro-cid-5dcumwjq="true">
+                    <a href="/product/bio-three-hi/" target="_self" style="color: #fff;" data-astro-cid-5dcumwjq="true"
+                      class="Btn L solid hasGradient">
+                      <span class="frame"
+                        style="background-image: linear-gradient(90deg, #07F 0%, #0045DA 50%, #07F 100%);"
+                        data-astro-cid-5dcumwjq></span>
+                      <span class="text" data-astro-cid-5dcumwjq>もっと詳しく見る</span>
+                    </a>
+                  </btn-component>
+                </div>
+              </div>
+            </div>
+          </section>
+          <script type="module" src="/assets/js/ResultAdvise.ts.js"></script>
+          <result-advise data-astro-cid-ywgv65fy="true">
+            <div class="ResultAdvice" data-astro-cid-ywgv65fy>
+              <h1 class="SecondPageTitle" data-astro-cid-6dffnzmc>
+                <span data-astro-cid-6dffnzmc>専門家のアドバイス</span>
+              </h1>
+              <p class="lead" data-astro-cid-ywgv65fy>
+                検査結果に応じて、薬・食事・生活習慣の3つの視点から、専門家があなたに合ったケアのヒントをお届けします。
+              </p>
+              <section class="splide" data-astro-cid-ywgv65fy>
+                <div class="splide__track" data-astro-cid-ywgv65fy>
+                  <ul class="splide__list" data-astro-cid-ywgv65fy>
+                    <div class="splide__slide" data-astro-cid-ywgv65fy>
+                      <div class="card" data-astro-cid-ywgv65fy>
+                        <div class="thumb" data-astro-cid-ywgv65fy>
+                          <img src="/assets/img/type-check/result/advice_spastic_01.webp" alt=""
+                            data-astro-cid-ywgv65fy>
                         </div>
-                        <div class="capacityAndPrice" data-astro-cid-nwhxhul2>
-                          <div class="capacity" data-astro-cid-nwhxhul2>(48包)</div>
-                          <div class="price" data-astro-cid-nwhxhul2>¥3,200</div>
+                        <div class="header" data-astro-cid-ywgv65fy>
+                          <div class="number" data-astro-cid-ywgv65fy>Advice 01</div>
+                        </div>
+                        <div class="content" data-astro-cid-ywgv65fy>
+                          <div class="body" data-astro-cid-ywgv65fy>
+                            <h3 class="title" data-astro-cid-ywgv65fy>カフェイン、アルコール、刺激ぶつを避ける</h3>
+                            <div class="divider" data-astro-cid-ywgv65fy></div>
+                            <p class="description" data-astro-cid-ywgv65fy>
+                              カフェインを含むコーヒー、紅茶、緑茶や、唐辛子などの香辛料、アルコールの多量は腸を刺激して便秘や腹痛を悪化させることがあるため、日常的に控えるようにしましょう。
+                              ほっと一息つきたいときはノンカフェインのハーブティーや麦茶がおすすめです。</p>
+                          </div>
+                          <div class="person" data-astro-cid-ywgv65fy>
+                            <div class="avatar" data-astro-cid-ywgv65fy>
+                              <img src="/assets/img/type-check/result/specialist_01.webp" alt=""
+                                data-astro-cid-ywgv65fy>
+                            </div>
+                            <div class="info" data-astro-cid-ywgv65fy>
+                              <div class="job" data-astro-cid-ywgv65fy>管理栄養士</div>
+                              <div class="name" data-astro-cid-ywgv65fy>本田祥子</div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
-                    <p class="description" data-astro-cid-nwhxhul2>植物由来成分が腸をやさしく刺激し、自然なお通じを助ける便秘薬。お腹が痛くなりにくく安心です。</p>
-                    <div class="btns" data-astro-cid-nwhxhul2>
-                      <btn-component data-href="/product/new-withone/" data-target="_self" data-size="M"
-                        data-type="solid" data-color="#828195" data-tag="a" data-disabled="false" data-isActive="false"
-                        data-shoulder data-isWide="false" data-astro-cid-5dcumwjq="true">
-                        <a href="/product/new-withone/" target="_self" style="color: #fff;"
-                          data-astro-cid-5dcumwjq="true" class="Btn M solid">
-                          <span class="frame" style="background-color: #828195;" data-astro-cid-5dcumwjq></span>
-                          <span class="text" data-astro-cid-5dcumwjq>もっと詳しく見る</span>
-                        </a>
-                      </btn-component>
-                      <btn-component data-href="/cart/" data-target="_self" data-size="M_L" data-type="solid"
-                        data-color="#000" data-tag="a" data-disabled="false" data-isActive="false" data-shoulder
-                        data-isWide="false" data-astro-cid-5dcumwjq="true">
-                        <a href="/cart/" target="_self" style="color: #fff;" data-astro-cid-5dcumwjq="true"
-                          class="Btn M_L solid">
-                          <span class="frame" style="background-color: #000;" data-astro-cid-5dcumwjq></span>
-                          <span class="text" data-astro-cid-5dcumwjq>カートに入れる</span>
-                          <img class="icnCart" src="/assets/img/common/icn_cart.svg" alt="カート" data-astro-cid-nwhxhul2>
-                        </a>
-                      </btn-component>
+                    <div class="splide__slide" data-astro-cid-ywgv65fy>
+                      <div class="card" data-astro-cid-ywgv65fy>
+                        <div class="thumb" data-astro-cid-ywgv65fy>
+                          <img src="/assets/img/type-check/result/advice_spastic_02.webp" alt=""
+                            data-astro-cid-ywgv65fy>
+                        </div>
+                        <div class="header" data-astro-cid-ywgv65fy>
+                          <div class="number" data-astro-cid-ywgv65fy>Advice 02</div>
+                        </div>
+                        <div class="content" data-astro-cid-ywgv65fy>
+                          <div class="body" data-astro-cid-ywgv65fy>
+                            <h3 class="title" data-astro-cid-ywgv65fy>刺激性の便秘薬は避けましょう</h3>
+                            <div class="divider" data-astro-cid-ywgv65fy></div>
+                            <p class="description" data-astro-cid-ywgv65fy>
+                              腸を動かすタイプの刺激性便秘薬は、腸のけいれんを悪化させて、おなかの痛みを強くすることがあります。酸化マグネシウムなどのおなかにやさしい便秘薬を選ぶようにしましょう。</p>
+                          </div>
+                          <div class="person" data-astro-cid-ywgv65fy>
+                            <div class="avatar" data-astro-cid-ywgv65fy>
+                              <img src="/assets/img/type-check/result/specialist_02.webp" alt=""
+                                data-astro-cid-ywgv65fy>
+                            </div>
+                            <div class="info" data-astro-cid-ywgv65fy>
+                              <div class="job" data-astro-cid-ywgv65fy>薬剤師</div>
+                              <div class="name" data-astro-cid-ywgv65fy>荘司和子</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="splide__slide" data-astro-cid-ywgv65fy>
+                      <div class="card" data-astro-cid-ywgv65fy>
+                        <div class="thumb" data-astro-cid-ywgv65fy>
+                          <img src="/assets/img/type-check/result/advice_spastic_03.webp" alt=""
+                            data-astro-cid-ywgv65fy>
+                        </div>
+                        <div class="header" data-astro-cid-ywgv65fy>
+                          <div class="number" data-astro-cid-ywgv65fy>Advice 03</div>
+                        </div>
+                        <div class="content" data-astro-cid-ywgv65fy>
+                          <div class="body" data-astro-cid-ywgv65fy>
+                            <h3 class="title" data-astro-cid-ywgv65fy>自分を労る工夫をしましょう</h3>
+                            <div class="divider" data-astro-cid-ywgv65fy></div>
+                            <p class="description" data-astro-cid-ywgv65fy>
+                              強い緊張やストレスは、腸に過剰な刺激を与え、お腹のトラブルを引き起こしやすくなります。意識的に休息を取り、ぬるめのお風呂や深呼吸などで心身をリラックスさせる時間を意識的に作ることが大切です。
+                            </p>
+                          </div>
+                          <div class="person" data-astro-cid-ywgv65fy>
+                            <div class="avatar" data-astro-cid-ywgv65fy>
+                              <img src="/assets/img/type-check/result/specialist_03.webp" alt=""
+                                data-astro-cid-ywgv65fy>
+                            </div>
+                            <div class="info" data-astro-cid-ywgv65fy>
+                              <div class="job" data-astro-cid-ywgv65fy>看護師</div>
+                              <div class="name" data-astro-cid-ywgv65fy>江口実奈美</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </section>
+            </div>
+          </result-advise>
+        </div>
+        <div class="BottomBanner" data-astro-cid-blkumcyv>
+          <div class="banner banner-product" data-astro-cid-blkumcyv>
+            <div class="ProductBanner" data-astro-cid-edntlcwp>
+              <div class="inner" data-astro-cid-edntlcwp>
+                <div class="card" style="--accent: #88C8F0; --textColor: #499DE2;" data-astro-cid-edntlcwp>
+                  <div class="info" data-astro-cid-edntlcwp>
+                    <div class="thumb" data-astro-cid-edntlcwp>
+                      <img src="/assets/img/products/mgo_1.webp" alt="" data-astro-cid-edntlcwp>
+                    </div>
+                    <div class="text" data-astro-cid-edntlcwp>
+                      <div class="badge" data-astro-cid-edntlcwp>
+                        <span data-astro-cid-edntlcwp>痔の原因を<br class="sp" />対策するなら！</span>
+                      </div>
+                      <h3 class="name" data-astro-cid-edntlcwp>ビーボ酸化マグネシウム錠</h3>
+                      <span class="price" data-astro-cid-edntlcwp>42錠(7日分)¥980〜</span>
                     </div>
                   </div>
-                </product-item-component>
+                  <div class="btn" data-astro-cid-edntlcwp>
+                    <btn-component data-href="/product/mgo/" data-target="_self" data-size="L" data-type="solid"
+                      data-color="#88C8F0" data-tag="a" data-disabled="false" data-isActive="false" data-shoulder
+                      data-isWide="false" data-astro-cid-5dcumwjq="true">
+                      <a href="/product/mgo/" target="_self" style="color: #fff;" data-astro-cid-5dcumwjq="true"
+                        class="Btn L solid hasGradient">
+                        <span class="frame"
+                          style="background-image: linear-gradient(90deg, #88C8F0 0%, #07F 50%, #88C8F0 100%);"
+                          data-astro-cid-5dcumwjq></span>
+                        <span class="text" data-astro-cid-5dcumwjq>もっと詳しく見る</span>
+                      </a>
+                    </btn-component>
+                  </div>
+                </div>
+                <div class="bar" data-astro-cid-edntlcwp>
+                  <div class="thumb" data-astro-cid-edntlcwp>
+                    <img src="/assets/img/products/mgo_1.webp" alt="" data-astro-cid-edntlcwp>
+                  </div>
+                  <div class="btn" data-astro-cid-edntlcwp>
+                    <btn-component data-href="/cart/" data-target="_self" data-size="L" data-type="solid"
+                      data-color="#88C8F0" data-tag="a" data-disabled="false" data-isActive="false" data-shoulder
+                      data-isWide="false" data-astro-cid-5dcumwjq="true">
+                      <a href="/cart/" target="_self" style="color: #fff;" data-astro-cid-5dcumwjq="true"
+                        class="Btn L solid hasBannerShoulderSP hasGradient">
+                        <span class="frame"
+                          style="background-image: linear-gradient(90deg, #88C8F0 0%, #07F 50%, #88C8F0 100%);"
+                          data-astro-cid-5dcumwjq></span>
+                        <span class="bannerShoulderSP" data-astro-cid-5dcumwjq>あなたに最もおすすめの薬を</span><span class="text"
+                          data-astro-cid-5dcumwjq>今すぐ購入する</span>
+                        <svg class="cartIcon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          data-astro-cid-edntlcwp>
+                          <path
+                            d="M4.81201 16C4.40671 16 4.0612 15.8584 3.77549 15.5753C3.48977 15.2921 3.34692 14.9517 3.34692 14.554C3.34692 14.1563 3.4912 13.8173 3.77977 13.5369C4.06834 13.2566 4.41528 13.1164 4.82058 13.1164C5.22588 13.1164 5.57139 13.258 5.85711 13.5411C6.14282 13.8243 6.28567 14.1647 6.28567 14.5624C6.28567 14.9601 6.14139 15.2991 5.85282 15.5795C5.56425 15.8598 5.21731 16 4.81201 16ZM12.9752 16C12.5699 16 12.2244 15.8584 11.9387 15.5753C11.653 15.2921 11.5101 14.9517 11.5101 14.554C11.5101 14.1563 11.6544 13.8173 11.943 13.5369C12.2316 13.2566 12.5785 13.1164 12.9838 13.1164C13.3891 13.1164 13.7346 13.258 14.0203 13.5411C14.306 13.8243 14.4489 14.1647 14.4489 14.5624C14.4489 14.9601 14.3046 15.2991 14.016 15.5795C13.7275 15.8598 13.3805 16 12.9752 16ZM3.75508 2.78348L5.99996 7.34919H11.8775L14.4285 2.78348H3.75508ZM3.14284 1.58198H15.1646C15.4771 1.58198 15.7149 1.72215 15.8779 2.0025C16.0408 2.28285 16.0407 2.5632 15.8774 2.84355L13.1224 7.70964C12.9727 7.96329 12.7784 8.16688 12.5395 8.3204C12.3006 8.47393 12.0391 8.55069 11.755 8.55069H5.57139L4.42854 10.6333H14.4489V11.8348H4.61222C4.04079 11.8348 3.62923 11.6479 3.37753 11.2741C3.12583 10.9003 3.12923 10.4798 3.38773 10.0125L4.69385 7.64956L1.59183 1.2015H0V0H2.38774L3.14284 1.58198Z"
+                            fill="currentColor" data-astro-cid-edntlcwp></path>
+                        </svg>
+                      </a>
+                    </btn-component>
+                  </div>
+                </div>
+                <div class="close" data-astro-cid-edntlcwp>
+                  <img src="/assets/img/type-check/result/banner_close.svg" alt="" data-astro-cid-edntlcwp>
+                </div>
               </div>
-            </section>
-            <div class="consultation">
-              <btn-component data-href="/consultation/" data-target="_self" data-size="M" data-type="outline"
-                data-color="#000000" data-tag="a" data-disabled="false" data-isActive="false" data-shoulder
-                data-isWide="true" data-astro-cid-5dcumwjq="true">
-                <a href="/consultation/" target="_self" style="color: #000000;" data-astro-cid-5dcumwjq="true"
-                  class="Btn M outline isWide">
-                  <span class="frame" style="background-color: #fff; border-color: #000000;"
-                    data-astro-cid-5dcumwjq></span>
-                  <span class="text" data-astro-cid-5dcumwjq>薬剤師に相談する</span>
+            </div>
+          </div>
+          <div class="banner banner-pharmacist" data-astro-cid-blkumcyv>
+            <div class="PharmacistBanner" data-astro-cid-vjrzxk7r>
+              <div class="body" data-astro-cid-vjrzxk7r>
+                <a href="/consultation/" class="inner" data-astro-cid-vjrzxk7r>
+                  <div class="card" data-astro-cid-vjrzxk7r>
+                    <p class="lead" data-astro-cid-vjrzxk7r>
+                      <span class="slash slash-left" data-astro-cid-vjrzxk7r></span>
+                      不安や疑問は、購入前に気軽にご相談ください。
+                      <span class="slash slash-right" data-astro-cid-vjrzxk7r></span>
+                    </p>
+                    <p class="cta" data-astro-cid-vjrzxk7r>
+                      <span data-astro-cid-vjrzxk7r>薬剤師へのご相談はこちら</span>
+                    </p>
+                  </div>
+                  <div class="bar" data-astro-cid-vjrzxk7r>
+                    <p class="lead" data-astro-cid-vjrzxk7r>不安や疑問は、購入前に気軽にご相談ください。</p>
+                    <p class="cta" data-astro-cid-vjrzxk7r>
+                      <span data-astro-cid-vjrzxk7r>薬剤師へのご相談はこちら</span>
+                    </p>
+                  </div>
+                  <img class="char" src="/assets/img/type-check/result/banner_pharmacist_char.png" alt=""
+                    data-astro-cid-vjrzxk7r>
                 </a>
-              </btn-component>
-              <p>不安や疑問は、購入前に気軽にご相談ください。</p>
+                <div class="close" data-astro-cid-vjrzxk7r>
+                  <img src="/assets/img/type-check/result/banner_close.svg" alt="" data-astro-cid-vjrzxk7r>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <script type="module" src="/assets/js/ResultAdvise.ts.js"></script>
-        <result-advise data-astro-cid-ywgv65fy="true">
-          <div class="ResultAdvice" data-astro-cid-ywgv65fy>
-            <h1 class="SecondPageTitle" data-astro-cid-6dffnzmc>
-              <span data-astro-cid-6dffnzmc>専門家のアドバイス</span>
-            </h1>
-            <p class="lead" data-astro-cid-ywgv65fy>
-              検査結果に応じて、薬・食事・生活習慣の3つの視点から、専門家があなたに合ったケアのヒントをお届けします。
-            </p>
-            <section class="splide" data-astro-cid-ywgv65fy>
-              <div class="splide__track" data-astro-cid-ywgv65fy>
-                <ul class="splide__list" data-astro-cid-ywgv65fy>
-                  <div class="splide__slide" data-astro-cid-ywgv65fy>
-                    <div class="card" data-astro-cid-ywgv65fy>
-                      <div class="header" data-astro-cid-ywgv65fy>
-                        <div class="number" data-astro-cid-ywgv65fy>Advice 01</div>
-                      </div>
-                      <div class="content" data-astro-cid-ywgv65fy>
-                        <div class="body" data-astro-cid-ywgv65fy>
-                          <h3 class="title" data-astro-cid-ywgv65fy>カフェイン、アルコール、刺激ぶつを避ける</h3>
-                          <div class="divider" data-astro-cid-ywgv65fy></div>
-                          <p class="description" data-astro-cid-ywgv65fy>
-                            カフェインを含むコーヒー、紅茶、緑茶や、唐辛子などの香辛料、アルコールの多量は腸を刺激して便秘や腹痛を悪化させることがあるため、日常的に控えるようにしましょう。
-                            ほっと一息つきたいときはノンカフェインのハーブティーや麦茶がおすすめです。</p>
-                        </div>
-                        <div class="person" data-astro-cid-ywgv65fy>
-                          <div class="avatar" data-astro-cid-ywgv65fy>
-                            <img src="/assets/img/type-check/result/specialist_01.webp" alt="" data-astro-cid-ywgv65fy>
-                          </div>
-                          <div class="info" data-astro-cid-ywgv65fy>
-                            <div class="job" data-astro-cid-ywgv65fy>管理栄養士</div>
-                            <div class="name" data-astro-cid-ywgv65fy>本田祥子</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="splide__slide" data-astro-cid-ywgv65fy>
-                    <div class="card" data-astro-cid-ywgv65fy>
-                      <div class="header" data-astro-cid-ywgv65fy>
-                        <div class="number" data-astro-cid-ywgv65fy>Advice 02</div>
-                      </div>
-                      <div class="content" data-astro-cid-ywgv65fy>
-                        <div class="body" data-astro-cid-ywgv65fy>
-                          <h3 class="title" data-astro-cid-ywgv65fy>刺激性のお薬は避けましょう</h3>
-                          <div class="divider" data-astro-cid-ywgv65fy></div>
-                          <p class="description" data-astro-cid-ywgv65fy>
-                            ビサコジルやセンノシドなどを配合した腸を刺激するタイプのお薬はおなかの痛みを悪化させることがあります。酸化マグネシウムなどやさしい薬を選ぶようにしましょう。</p>
-                        </div>
-                        <div class="person" data-astro-cid-ywgv65fy>
-                          <div class="avatar" data-astro-cid-ywgv65fy>
-                            <img src="/assets/img/type-check/result/specialist_02.webp" alt="" data-astro-cid-ywgv65fy>
-                          </div>
-                          <div class="info" data-astro-cid-ywgv65fy>
-                            <div class="job" data-astro-cid-ywgv65fy>薬剤師</div>
-                            <div class="name" data-astro-cid-ywgv65fy>荘司和子</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="splide__slide" data-astro-cid-ywgv65fy>
-                    <div class="card" data-astro-cid-ywgv65fy>
-                      <div class="header" data-astro-cid-ywgv65fy>
-                        <div class="number" data-astro-cid-ywgv65fy>Advice 03</div>
-                      </div>
-                      <div class="content" data-astro-cid-ywgv65fy>
-                        <div class="body" data-astro-cid-ywgv65fy>
-                          <h3 class="title" data-astro-cid-ywgv65fy>自分を労る工夫をしましょう</h3>
-                          <div class="divider" data-astro-cid-ywgv65fy></div>
-                          <p class="description" data-astro-cid-ywgv65fy>
-                            強い緊張やストレスは、腸に過剰な刺激を与え、お腹のトラブルを引き起こしやすくなります。意識的に休息を取り、ぬるめのお風呂や深呼吸などで心身をリラックスさせる時間を意識的に作ることが大切です。
-                          </p>
-                        </div>
-                        <div class="person" data-astro-cid-ywgv65fy>
-                          <div class="avatar" data-astro-cid-ywgv65fy>
-                            <img src="/assets/img/type-check/result/specialist_03.webp" alt="" data-astro-cid-ywgv65fy>
-                          </div>
-                          <div class="info" data-astro-cid-ywgv65fy>
-                            <div class="job" data-astro-cid-ywgv65fy>看護師</div>
-                            <div class="name" data-astro-cid-ywgv65fy>江口実奈美</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </ul>
-              </div>
-            </section>
-          </div>
-        </result-advise>
-        <script type="module" src="/assets/js/ResultBanner.ts.js"></script>
-        <result-banner data-astro-cid-4ilgabae="true">
-          <a href="/consultation/" class="ResultBanner pink" data-character="pink" data-astro-cid-4ilgabae>
-            <div class="balloon" data-astro-cid-4ilgabae>
-              <img src="/assets/img/type-check/result/banner_balloon.svg" alt="" data-astro-cid-4ilgabae>
-            </div>
-            <div class="character" data-astro-cid-4ilgabae>
-              <img src="/assets/img/type-check/result/banner_bebo_pink.svg" alt="" data-astro-cid-4ilgabae>
-              <div class="eye eye1" data-astro-cid-4ilgabae></div>
-              <div class="eye eye2" data-astro-cid-4ilgabae></div>
-            </div>
-          </a>
-          <div class="close" data-astro-cid-4ilgabae>
-            <img src="/assets/img/type-check/result/banner_close.svg" alt="" data-astro-cid-4ilgabae>
-          </div>
-        </result-banner>
+        <script type="module" src="/assets/js/BottomBanner.ts.js"></script>
       </div>
       <script type="module" src="/assets/js/ResultFeedback.ts.js"></script>
       <wave-separator data-color-top="#f8f5f0" data-color-bottom="#fff" data-astro-cid-g2x64x6i="true">
@@ -664,7 +872,7 @@
                 class="Btn S transparent">
                 <span class="frame" style="background-color: transparent; border-color: #fff;"
                   data-astro-cid-5dcumwjq></span>
-                <span class="text" data-astro-cid-5dcumwjq>運営会社</span><svg viewBox="0 0 12 12" fill="none"
+                <span class="text" data-astro-cid-5dcumwjq>運営会社</span><svg class="blank" viewBox="0 0 12 12" fill="none"
                   data-astro-cid-5dcumwjq>
                   <path
                     d="M5.49829 1.86133H2C1.44772 1.86133 1 2.30904 1 2.86133V9.85879C1 10.4111 1.44772 10.8588 2 10.8588H8.99659C9.54887 10.8588 9.99659 10.4111 9.99659 9.85879V6.36006"

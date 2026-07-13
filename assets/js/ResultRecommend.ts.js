@@ -1,0 +1,1 @@
+document.querySelectorAll(".ResultRecommend .accordion").forEach(e=>{const t=e.querySelector(".toggle"),o=e.querySelector(".crop"),r=e.querySelector(".accordionBody");!t||!o||!r||t.addEventListener("click",()=>{const n=e.classList.toggle("isOpen");t.setAttribute("aria-expanded",String(n)),o.style.height=n?r.offsetHeight+"px":"0"})});

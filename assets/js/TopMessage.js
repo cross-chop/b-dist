@@ -2,7 +2,7 @@ import { c as createComponent, b as renderScript, r as renderComponent, a as ren
 import 'kleur/colors';
 import { a as $$Btn } from './Layout.js';
 /* empty css        */
-import { a as $$SectionHeader } from './Lineup.js';
+import { c as $$SectionHeader } from './AccordionItem.js';
 
 const $$TopKv = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${renderScript($$result, "/Users/bofft/Works/bebo/src/components/TopKv.astro?astro&type=script&index=0&lang.ts")}

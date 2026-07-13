@@ -1,80 +1,109 @@
-import { c as createComponent, d as createAstro, b as renderScript, r as renderComponent, a as renderTemplate, m as maybeRenderHead, e as addAttribute, F as Fragment } from './astro/server.js';
+import { c as createComponent, d as createAstro, b as renderScript, r as renderComponent, a as renderTemplate, m as maybeRenderHead, e as addAttribute, F as Fragment, u as unescapeHTML } from './astro/server.js';
 import 'kleur/colors';
+/* empty css                                  */
 import { a as $$Btn } from './Layout.js';
 /* empty css        */
+
+const $$Astro$1 = createAstro();
+const $$WaveSeparator = createComponent(($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro$1, $$props, $$slots);
+  Astro2.self = $$WaveSeparator;
+  const { colorTop = "#f8f5f0", colorBottom = "#fff" } = Astro2.props;
+  return renderTemplate`${renderScript($$result, "/Users/bofft/Works/bebo/src/components/WaveSeparator.astro?astro&type=script&index=0&lang.ts")}
+
+${renderComponent($$result, "wave-separator", "wave-separator", { "data-color-top": colorTop, "data-color-bottom": colorBottom, "data-astro-cid-g2x64x6i": true }, { "default": () => renderTemplate`
+  ${maybeRenderHead()}<canvas data-astro-cid-g2x64x6i></canvas>
+` })}`;
+}, "/Users/bofft/Works/bebo/src/components/WaveSeparator.astro", void 0);
+
+const productsData = [
+  {
+    id: "mgo",
+    title: "ビーボ酸化マグネシウム錠",
+    type: "第3類医薬品",
+    company: "エムボックス",
+    capacity: ["360錠", "90錠", "42錠", "360錠"],
+    days: ["60日分", "15日分", "7日分", "60日分"],
+    price: ["¥2,500", "¥1,500", "¥980", "¥2,500"],
+    description: "酸化マグネシウムは、腸内水分を調整し、便をやわらかくし、自然なお通じを促すため、おなかが痛くなりにくいのが特徴です。十分な水分とともに服用することで確実な作用が期待できます。",
+    baseText: "42錠(7日分)¥980〜",
+    badgeText: '痔の原因を<br class="sp" />対策するなら！',
+    btnColor: "#88C8F0",
+    textColor: "#499DE2",
+    btnGradient: "linear-gradient(90deg, #88C8F0 0%, #07F 50%, #88C8F0 100%)"
+  },
+  {
+    id: "bio-three-hi",
+    title: "ビオスリーHi錠",
+    type: "指定医薬部外品",
+    company: "アリナミン製薬",
+    capacity: "270錠",
+    price: "¥2,900",
+    description: "3種の善玉菌が腸に届き、バランスを整える整腸剤。便秘や軟便など腸の不調を改善し、穏やかに働きます。",
+    badgeText: '日頃の腸活に<br class="sp" />おすすめ',
+    btnColor: "#0065D9",
+    textColor: "#0065D9",
+    btnGradient: "linear-gradient(90deg, #07F 0%, #0045DA 50%, #07F 100%)"
+  },
+  {
+    id: "new-withone",
+    title: "新ウィズワン",
+    type: "第②類医薬品",
+    company: "ゼリア新薬",
+    capacity: "48包",
+    price: "¥3,200",
+    description: "植物由来成分が便に水分を含ませて柔らかくし、自然なお通じをサポート。生薬成分がスムーズな排便へ導きます。",
+    badgeText: 'スペシャルな日の<br class="sp" />ケア専用！',
+    btnColor: "#9FCF2D",
+    textColor: "#63A808",
+    btnGradient: "linear-gradient(90deg, #9FCF2D 0%, #339200 50%, #9FCF2D 100%)"
+  },
+  {
+    id: "colac-ii",
+    title: "コーラックⅡ",
+    type: "第2類医薬品",
+    company: "大正製薬",
+    capacity: "40錠",
+    price: "¥729",
+    description: "腸を刺激して排便を促すタイプの便秘薬。即効性があり、寝る前に飲むと翌朝スッキリしやすいです。頑固な便秘のときにおすすめ。",
+    badgeText: 'スペシャルな日の<br class="sp" />ケア専用！',
+    btnColor: "#FF50B6",
+    textColor: "#FF50B6",
+    btnGradient: "linear-gradient(90deg, #FF89C8 0%, #FF0095 50%, #FF89C8 100%  )"
+  },
+  {
+    id: "borraginol-a",
+    title: "ボラギノールA軟膏",
+    type: "第②類医薬品",
+    company: "天藤製薬",
+    capacity: "20g/6g×2本",
+    price: "¥1,379",
+    description: "4つの有効成分を配合し、痔による痛み・痒み・腫れを鎮めます。患部に直接作用してつらい症状を和らげます。",
+    badgeText: '痔によるお尻の悩みに<br class="sp" />おすすめ',
+    btnColor: "#FF9E0B",
+    textColor: "#FFA809",
+    btnGradient: "linear-gradient(90deg, #FFCF31 0%, #FF8000 50%, #FFCF31 100%)"
+  },
+  {
+    id: "daichi-no-kampo",
+    title: "大地の漢方便秘薬",
+    type: "第2類医薬品",
+    company: "アリナミン製薬",
+    capacity: "65錠",
+    price: "¥1,613",
+    description: "生薬の「大黄」と「甘草」を配合した「大黄甘草湯」が大腸をしっかり動かし、便をスムーズに運び出します。",
+    badgeText: 'スペシャルな日の<br class="sp" />ケア専用！',
+    btnColor: "#54B37B",
+    textColor: "#54B37B",
+    btnGradient: "linear-gradient(90deg, #00E077 0%, #54B37B 50%, #00E077 100%)"
+  }
+];
 
 const $$Astro = createAstro();
 const $$ProductItem = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$ProductItem;
-  const { id, isNoBtn = false } = Astro2.props;
-  const productsData = [
-    {
-      id: "mgo",
-      title: "\u30D3\u30FC\u30DC\u9178\u5316\u30DE\u30B0\u30CD\u30B7\u30A6\u30E0\u9320",
-      type: "\u7B2C3\u985E\u533B\u85AC\u54C1",
-      company: "\u30A8\u30E0\u30DC\u30C3\u30AF\u30B9",
-      capacity: ["360\u9320", "90\u9320", "42\u9320", "360\u9320"],
-      days: ["60\u65E5\u5206", "15\u65E5\u5206", "7\u65E5\u5206", "60\u65E5\u5206"],
-      price: ["\xA52,500", "\xA51,500", "\xA5980", "\xA52,500"],
-      btnColor: "#88C8F0",
-      description: "\u9178\u5316\u30DE\u30B0\u30CD\u30B7\u30A6\u30E0\u306F\u3001\u8178\u5185\u6C34\u5206\u3092\u8ABF\u6574\u3057\u3001\u4FBF\u3092\u3084\u308F\u3089\u304B\u304F\u3057\u3001\u81EA\u7136\u306A\u304A\u901A\u3058\u3092\u4FC3\u3059\u305F\u3081\u3001\u304A\u306A\u304B\u304C\u75DB\u304F\u306A\u308A\u306B\u304F\u3044\u306E\u304C\u7279\u5FB4\u3067\u3059\u3002\u5341\u5206\u306A\u6C34\u5206\u3068\u3068\u3082\u306B\u670D\u7528\u3059\u308B\u3053\u3068\u3067\u78BA\u5B9F\u306A\u4F5C\u7528\u304C\u671F\u5F85\u3067\u304D\u307E\u3059\u3002"
-    },
-    {
-      id: "shin-biofermin-s",
-      title: "\u65B0\u30D3\u30AA\u30D5\u30A7\u30EB\u30DF\u30F3S\u9320",
-      type: "\u6307\u5B9A\u533B\u85AC\u90E8\u5916\u54C1",
-      company: "\u5927\u6B63\u88FD\u85AC",
-      capacity: "540\u9320",
-      price: "\xA53,300",
-      description: "\u30D3\u30D5\u30A3\u30BA\u30B9\u83CC\u30682\u7A2E\u985E\u306E\u4E73\u9178\u83CC\u304C\u8178\u5185\u74B0\u5883\u3092\u6574\u3048\u308B\u6574\u8178\u5264\u3002\u4FBF\u79D8\u3084\u4E0B\u75E2\u306E\u3069\u3061\u3089\u306B\u3082\u4F7F\u3048\u3001\u6BCE\u65E5\u306E\u8178\u6D3B\u30B5\u30DD\u30FC\u30C8\u306B\u3082\u5F79\u7ACB\u3061\u307E\u3059\u3002"
-    },
-    {
-      id: "bio-three-hi",
-      title: "\u30D3\u30AA\u30B9\u30EA\u30FC\u9320",
-      type: "\u6307\u5B9A\u533B\u85AC\u90E8\u5916\u54C1",
-      company: "\u30A2\u30EA\u30CA\u30DF\u30F3\u88FD\u85AC",
-      capacity: "270\u9320",
-      price: "\xA52,900",
-      description: "3\u7A2E\u306E\u5584\u7389\u83CC\u304C\u8178\u306B\u5C4A\u304D\u3001\u30D0\u30E9\u30F3\u30B9\u3092\u6574\u3048\u308B\u6574\u8178\u5264\u3002\u4FBF\u79D8\u3084\u8EDF\u4FBF\u306A\u3069\u8178\u306E\u4E0D\u8ABF\u3092\u6539\u5584\u3057\u3001\u7A4F\u3084\u304B\u306B\u50CD\u304D\u307E\u3059\u3002"
-    },
-    {
-      id: "new-withone",
-      title: "\u65B0\u30A6\u30A3\u30BA\u30EF\u30F3",
-      type: "\u7B2C\u2461\u985E\u533B\u85AC\u54C1",
-      company: "\u30BC\u30EA\u30A2\u65B0\u85AC",
-      capacity: "48\u5305",
-      price: "\xA53,200",
-      description: "\u690D\u7269\u7531\u6765\u6210\u5206\u304C\u8178\u3092\u3084\u3055\u3057\u304F\u523A\u6FC0\u3057\u3001\u81EA\u7136\u306A\u304A\u901A\u3058\u3092\u52A9\u3051\u308B\u4FBF\u79D8\u85AC\u3002\u304A\u8179\u304C\u75DB\u304F\u306A\u308A\u306B\u304F\u304F\u5B89\u5FC3\u3067\u3059\u3002"
-    },
-    {
-      id: "colac-ii",
-      title: "\u30B3\u30FC\u30E9\u30C3\u30AF\u2161",
-      type: "\u7B2C2\u985E\u533B\u85AC\u54C1",
-      company: "\u5927\u6B63\u88FD\u85AC",
-      capacity: "40\u9320",
-      price: "\xA5729",
-      description: "\u8178\u3092\u523A\u6FC0\u3057\u3066\u6392\u4FBF\u3092\u4FC3\u3059\u30BF\u30A4\u30D7\u306E\u4FBF\u79D8\u85AC\u3002\u5373\u52B9\u6027\u304C\u3042\u308A\u3001\u5BDD\u308B\u524D\u306B\u98F2\u3080\u3068\u7FCC\u671D\u30B9\u30C3\u30AD\u30EA\u3057\u3084\u3059\u3044\u3067\u3059\u3002\u9811\u56FA\u306A\u4FBF\u79D8\u306E\u3068\u304D\u306B\u304A\u3059\u3059\u3081\u3002"
-    },
-    {
-      id: "new-lecicarbon",
-      title: "\u65B0\u30EC\u30B7\u30AB\u30EB\u30DC\u30F3\u5750\u5264S",
-      type: "\u7B2C3\u985E\u533B\u85AC\u54C1",
-      company: "\u30BC\u30EA\u30A2\u65B0\u85AC",
-      capacity: "10\u500B",
-      price: "\xA5638",
-      description: "\u809B\u9580\u304B\u3089\u4F7F\u3046\u5750\u5264\u30BF\u30A4\u30D7\u306E\u4FBF\u79D8\u85AC\u3002\u30AC\u30B9\u306E\u529B\u3067\u8178\u3092\u523A\u6FC0\u3057\u3001\u5373\u52B9\u3067\u6392\u4FBF\u3092\u4FC3\u3057\u307E\u3059\u3002\u98F2\u307F\u85AC\u304C\u82E6\u624B\u306A\u65B9\u306B\u3082\u3002"
-    },
-    {
-      id: "oxide_magnesium_e",
-      title: "\u9178\u5316\u30DE\u30B0\u30CD\u30B7\u30A6\u30E0E\u4FBF\u79D8\u85AC",
-      type: "\u7B2C3\u985E\u533B\u85AC\u54C1",
-      company: "\u5065\u6804\u88FD\u85AC",
-      capacity: "",
-      price: "",
-      description: ""
-    }
-  ];
+  const { id, isNoBtn = false, order = false, isBigCartBtn = false } = Astro2.props;
   const data = productsData.find((product) => product.id === id);
   const hasVariations = Array.isArray(data?.capacity) && data?.capacity.length > 1;
   const variations = hasVariations && Array.isArray(data?.capacity) && Array.isArray(data?.days) && Array.isArray(data?.price) ? data.capacity.map((capacity, index) => ({
@@ -85,7 +114,7 @@ const $$ProductItem = createComponent(($$result, $$props, $$slots) => {
   })) : [];
   return renderTemplate`${renderScript($$result, "/Users/bofft/Works/bebo/src/components/ProductItem.astro?astro&type=script&index=0&lang.ts")}
 
-${renderComponent($$result, "product-item-component", "product-item-component", { "class": `ProductItem ${isNoBtn ? "isNoBtn" : ""}`, "data-product-id": id, "data-has-variations": hasVariations, "data-astro-cid-nwhxhul2": true }, { "default": () => renderTemplate`
+${renderComponent($$result, "product-item-component", "product-item-component", { "class": `ProductItem ${isNoBtn ? "isNoBtn" : ""} ${isBigCartBtn ? "isBigCartBtn" : ""} ${order ? "isOrder" : ""}`, "data-product-id": id, "data-astro-cid-nwhxhul2": true }, { "default": () => renderTemplate`
   ${maybeRenderHead()}<div class="thumb" data-astro-cid-nwhxhul2>
     <a${addAttribute(`/product/${data.id}/`, "href")} data-astro-cid-nwhxhul2>
       ${hasVariations ? variations.map((variation, index) => renderTemplate`<img${addAttribute(`/assets/img/products/${data.id}_${variation.imageIndex}.webp`, "src")} alt="" class="variation-image"${addAttribute(index, "data-variation-index")}${addAttribute(index === 0 ? "opacity: 1;" : "opacity: 0;", "style")} data-astro-cid-nwhxhul2>`) : renderTemplate`<img${addAttribute(`/assets/img/products/${data.id}.webp`, "src")} alt="" data-astro-cid-nwhxhul2>`}
@@ -118,7 +147,7 @@ ${renderComponent($$result, "product-item-component", "product-item-component", 
         </div>
       </div>
     </div>
-    <p class="description" data-astro-cid-nwhxhul2>${data.description}</p>
+    ${data.description && !order && renderTemplate`<p class="description" data-astro-cid-nwhxhul2>${unescapeHTML(data.description)}</p>`}
     ${hasVariations && renderTemplate`<div class="variations" data-astro-cid-nwhxhul2>
           ${variations.map((variation, index) => renderTemplate`<button type="button" class="variation-btn"${addAttribute(index, "data-variation-index")}${addAttribute(index === 0, "data-active")} data-astro-cid-nwhxhul2>
               <div class="variation-btn-content" data-astro-cid-nwhxhul2>
@@ -135,13 +164,14 @@ ${renderComponent($$result, "product-item-component", "product-item-component", 
             </button>`)}
         </div>`}
     <div class="btns" data-astro-cid-nwhxhul2>
-      ${!isNoBtn && renderTemplate`${renderComponent($$result, "Btn", $$Btn, { "text": "\u3082\u3063\u3068\u8A73\u3057\u304F\u898B\u308B", "size": "M", "href": `/product/${data.id}/`, "type": "solid", "color": data.btnColor || "#828195", "data-astro-cid-nwhxhul2": true })}`}
-      ${renderComponent($$result, "Btn", $$Btn, { "text": "\u30AB\u30FC\u30C8\u306B\u5165\u308C\u308B", "size": "M_L", "href": "/cart/", "type": "solid", "color": "#000", "data-astro-cid-nwhxhul2": true }, { "default": ($$result2) => renderTemplate`
+      ${renderComponent($$result, "Btn", $$Btn, { "text": "\u30AB\u30FC\u30C8\u306B\u5165\u308C\u308B", "size": "M_L", "href": "/cart/", "type": "solid", "color": "#000", "gradient": data.btnGradient, "data-astro-cid-nwhxhul2": true }, { "default": ($$result2) => renderTemplate`
         <img class="icnCart" src="/assets/img/common/icn_cart.svg" alt="カート" data-astro-cid-nwhxhul2>
       ` })}
+      ${data.description && order && renderTemplate`<p class="description" data-astro-cid-nwhxhul2>${unescapeHTML(data.description)}</p>`}
+      ${!isNoBtn && renderTemplate`${renderComponent($$result, "Btn", $$Btn, { "text": "\u3082\u3063\u3068\u8A73\u3057\u304F\u898B\u308B", "size": "M", "href": `/product/${data.id}/`, "type": "outline", "color": data.btnColor || "#637390", "data-astro-cid-nwhxhul2": true })}`}
     </div>
   </div>
 ` })}`;
 }, "/Users/bofft/Works/bebo/src/components/ProductItem.astro", void 0);
 
-export { $$ProductItem as $ };
+export { $$ProductItem as $, $$WaveSeparator as a, productsData as p };

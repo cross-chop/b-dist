@@ -1,4 +1,4 @@
-import { c as createComponent, d as createAstro, b as renderScript, r as renderComponent, a as renderTemplate, m as maybeRenderHead, e as addAttribute, f as renderSlot, F as Fragment, g as defineStyleVars, h as renderHead } from './astro/server.js';
+import { c as createComponent, d as createAstro, b as renderScript, r as renderComponent, a as renderTemplate, m as maybeRenderHead, e as addAttribute, f as renderSlot, u as unescapeHTML, F as Fragment, g as defineStyleVars, h as renderHead } from './astro/server.js';
 import 'kleur/colors';
 /* empty css             */
 /* empty css                   */
@@ -9,6 +9,7 @@ const $$Btn = createComponent(($$result, $$props, $$slots) => {
   Astro2.self = $$Btn;
   const {
     text,
+    html = "",
     href,
     target = "_self",
     size = "L",
@@ -18,7 +19,10 @@ const $$Btn = createComponent(($$result, $$props, $$slots) => {
     tag = "a",
     isDisabled = false,
     isActive = false,
+    arrow = false,
     shoulder = "",
+    bannerShoulderTextSP = "",
+    // SP時のみボタン上部に表示する肩テキスト（バナー用）
     isWide = false,
     id = ""
   } = Astro2.props;
@@ -32,19 +36,23 @@ ${renderComponent($$result, "btn-component", "btn-component", { "data-href": hre
     M_S: size === "M_S",
     M_L: size === "M_L",
     S: size === "S",
+    S_PC_M_SP: size === "S_PC_M_SP",
     solid: type === "solid",
     outline: type === "outline",
     transparent: type === "transparent",
     disabled: isDisabled,
     isActive,
     hasShoulder: shoulder !== "",
+    hasBannerShoulderSP: bannerShoulderTextSP !== "",
     isWide,
     hasGradient: gradient !== ""
   }], "style": type === "solid" ? `color: #fff;` : `color: ${color};`, "data-astro-cid-5dcumwjq": true }, { "default": ($$result2) => renderTemplate`
     ${maybeRenderHead()}<span class="frame"${addAttribute(type === "solid" ? gradient ? `background-image: ${gradient};` : `background-color: ${color};` : type === "transparent" ? `background-color: transparent; border-color: ${color};` : type === "invert" ? `background-color: #fff; ` : `background-color: #fff; border-color: ${color};`, "style")} data-astro-cid-5dcumwjq></span>
-    ${text && tag !== "input" && renderTemplate`<span class="text" data-astro-cid-5dcumwjq>${text}</span>`}${target === "_blank" && renderTemplate`<svg viewBox="0 0 12 12" fill="none" data-astro-cid-5dcumwjq>
+    ${bannerShoulderTextSP !== "" && renderTemplate`<span class="bannerShoulderSP" data-astro-cid-5dcumwjq>${bannerShoulderTextSP}</span>`}${(text || html) && tag !== "input" && renderTemplate`<span class="text" data-astro-cid-5dcumwjq>${unescapeHTML(html || text)}</span>`}${target === "_blank" && renderTemplate`<svg class="blank" viewBox="0 0 12 12" fill="none" data-astro-cid-5dcumwjq>
           <path d="M5.49829 1.86133H2C1.44772 1.86133 1 2.30904 1 2.86133V9.85879C1 10.4111 1.44772 10.8588 2 10.8588H8.99659C9.54887 10.8588 9.99659 10.4111 9.99659 9.85879V6.36006" data-astro-cid-5dcumwjq></path>
           <path d="M11.0004 4.85825V0.859375M11.0004 0.859375H7.00195M11.0004 0.859375L7.00195 4.85825" data-astro-cid-5dcumwjq></path>
+        </svg>`}${arrow && renderTemplate`<svg class="arrow" viewBox="0 0 8 14" fill="none" data-astro-cid-5dcumwjq>
+          <path d="M0.882813 0.882813L6.88281 6.88281L0.882813 12.8828" stroke="currentColor" stroke-width="1.25" stroke-linecap="square" data-astro-cid-5dcumwjq></path>
         </svg>`}${shoulder !== "" && renderTemplate`<span class="shoulder" data-astro-cid-5dcumwjq>${shoulder}</span>`}${renderSlot($$result2, $$slots["default"])}
     ${tag === "input" && renderTemplate`<input type="submit"${addAttribute(text, "value")}${addAttribute(id !== "" ? id : void 0, "id")}${addAttribute(type === "solid" ? `color: #fff;` : `color: ${color};`, "style")} data-astro-cid-5dcumwjq>`}` })}
 ` })}`;

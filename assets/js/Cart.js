@@ -29,7 +29,7 @@ const $$RecommendItem = createComponent(($$result, $$props, $$slots) => {
     <div class="inner" data-astro-cid-5cyw2xya>
       <div class="image" data-astro-cid-5cyw2xya><img src="/assets/img/_dummy/bio-three-hi.png" alt="" data-astro-cid-5cyw2xya></div>
       <div class="info" data-astro-cid-5cyw2xya>
-        <div class="title" data-astro-cid-5cyw2xya>ビオスリー錠</div>
+        <div class="title" data-astro-cid-5cyw2xya>ビオスリーHi錠</div>
         <div class="meta" data-astro-cid-5cyw2xya>
           <div class="badges" data-astro-cid-5cyw2xya>
             <div class="badge" data-astro-cid-5cyw2xya><span data-astro-cid-5cyw2xya>指定医薬部外品</span></div>
