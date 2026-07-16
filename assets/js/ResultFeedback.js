@@ -1,7 +1,7 @@
 import { c as createComponent, d as createAstro, m as maybeRenderHead, f as renderSlot, a as renderTemplate, r as renderComponent, b as renderScript, e as addAttribute, u as unescapeHTML } from './astro/server.js';
 import 'kleur/colors';
 import 'clsx';
-/* empty css                                  */
+/* empty css                                */
 import { $ as $$SecondPageTitle } from './SecondPageTitle.js';
 import { r as resultEyePosition, a as resultShapes, b as resultColors } from './resultCharacter.js';
 import { a as $$Btn } from './Layout.js';
@@ -519,7 +519,11 @@ const $$ProductBanner = createComponent(($$result, $$props, $$slots) => {
         </div>
       </div>
       <div class="btn" data-astro-cid-edntlcwp>
-        ${renderComponent($$result, "Btn", $$Btn, { "text": "\u3082\u3063\u3068\u8A73\u3057\u304F\u898B\u308B", "size": "L", "href": item.href, "type": "solid", "color": item.accentColor, "gradient": item.accentGradient, "data-astro-cid-edntlcwp": true })}
+        ${renderComponent($$result, "Btn", $$Btn, { "text": "\u4ECA\u3059\u3050\u8CFC\u5165\u3059\u308B", "size": "L", "href": "/cart/", "type": "solid", "bannerShoulderText": "\u3042\u306A\u305F\u306B\u6700\u3082\u304A\u3059\u3059\u3081\u306E\u85AC\u3092", "color": item.accentColor, "gradient": item.accentGradient, "data-astro-cid-edntlcwp": true }, { "default": ($$result2) => renderTemplate`
+          <svg class="cartIcon" viewBox="0 0 16 16" fill="none" data-astro-cid-edntlcwp>
+            <path d="M4.81201 16C4.40671 16 4.0612 15.8584 3.77549 15.5753C3.48977 15.2921 3.34692 14.9517 3.34692 14.554C3.34692 14.1563 3.4912 13.8173 3.77977 13.5369C4.06834 13.2566 4.41528 13.1164 4.82058 13.1164C5.22588 13.1164 5.57139 13.258 5.85711 13.5411C6.14282 13.8243 6.28567 14.1647 6.28567 14.5624C6.28567 14.9601 6.14139 15.2991 5.85282 15.5795C5.56425 15.8598 5.21731 16 4.81201 16ZM12.9752 16C12.5699 16 12.2244 15.8584 11.9387 15.5753C11.653 15.2921 11.5101 14.9517 11.5101 14.554C11.5101 14.1563 11.6544 13.8173 11.943 13.5369C12.2316 13.2566 12.5785 13.1164 12.9838 13.1164C13.3891 13.1164 13.7346 13.258 14.0203 13.5411C14.306 13.8243 14.4489 14.1647 14.4489 14.5624C14.4489 14.9601 14.3046 15.2991 14.016 15.5795C13.7275 15.8598 13.3805 16 12.9752 16ZM3.75508 2.78348L5.99996 7.34919H11.8775L14.4285 2.78348H3.75508ZM3.14284 1.58198H15.1646C15.4771 1.58198 15.7149 1.72215 15.8779 2.0025C16.0408 2.28285 16.0407 2.5632 15.8774 2.84355L13.1224 7.70964C12.9727 7.96329 12.7784 8.16688 12.5395 8.3204C12.3006 8.47393 12.0391 8.55069 11.755 8.55069H5.57139L4.42854 10.6333H14.4489V11.8348H4.61222C4.04079 11.8348 3.62923 11.6479 3.37753 11.2741C3.12583 10.9003 3.12923 10.4798 3.38773 10.0125L4.69385 7.64956L1.59183 1.2015H0V0H2.38774L3.14284 1.58198Z" fill="currentColor" data-astro-cid-edntlcwp></path>
+          </svg>
+        ` })}
       </div>
     </div>
     
@@ -528,8 +532,8 @@ const $$ProductBanner = createComponent(($$result, $$props, $$slots) => {
         <img${addAttribute(item.image, "src")} alt="" data-astro-cid-edntlcwp>
       </div>
       <div class="btn" data-astro-cid-edntlcwp>
-        ${renderComponent($$result, "Btn", $$Btn, { "text": "\u4ECA\u3059\u3050\u8CFC\u5165\u3059\u308B", "size": "L", "href": "/cart/", "type": "solid", "color": item.accentColor, "gradient": item.accentGradient, "bannerShoulderTextSP": "\u3042\u306A\u305F\u306B\u6700\u3082\u304A\u3059\u3059\u3081\u306E\u85AC\u3092", "data-astro-cid-edntlcwp": true }, { "default": ($$result2) => renderTemplate`
-          <svg class="cartIcon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" data-astro-cid-edntlcwp>
+        ${renderComponent($$result, "Btn", $$Btn, { "text": "\u4ECA\u3059\u3050\u8CFC\u5165\u3059\u308B", "size": "L", "href": "/cart/", "type": "solid", "color": item.accentColor, "gradient": item.accentGradient, "bannerShoulderText": "\u3042\u306A\u305F\u306B\u6700\u3082\u304A\u3059\u3059\u3081\u306E\u85AC\u3092", "data-astro-cid-edntlcwp": true }, { "default": ($$result2) => renderTemplate`
+          <svg class="cartIcon" viewBox="0 0 16 16" fill="none" data-astro-cid-edntlcwp>
             <path d="M4.81201 16C4.40671 16 4.0612 15.8584 3.77549 15.5753C3.48977 15.2921 3.34692 14.9517 3.34692 14.554C3.34692 14.1563 3.4912 13.8173 3.77977 13.5369C4.06834 13.2566 4.41528 13.1164 4.82058 13.1164C5.22588 13.1164 5.57139 13.258 5.85711 13.5411C6.14282 13.8243 6.28567 14.1647 6.28567 14.5624C6.28567 14.9601 6.14139 15.2991 5.85282 15.5795C5.56425 15.8598 5.21731 16 4.81201 16ZM12.9752 16C12.5699 16 12.2244 15.8584 11.9387 15.5753C11.653 15.2921 11.5101 14.9517 11.5101 14.554C11.5101 14.1563 11.6544 13.8173 11.943 13.5369C12.2316 13.2566 12.5785 13.1164 12.9838 13.1164C13.3891 13.1164 13.7346 13.258 14.0203 13.5411C14.306 13.8243 14.4489 14.1647 14.4489 14.5624C14.4489 14.9601 14.3046 15.2991 14.016 15.5795C13.7275 15.8598 13.3805 16 12.9752 16ZM3.75508 2.78348L5.99996 7.34919H11.8775L14.4285 2.78348H3.75508ZM3.14284 1.58198H15.1646C15.4771 1.58198 15.7149 1.72215 15.8779 2.0025C16.0408 2.28285 16.0407 2.5632 15.8774 2.84355L13.1224 7.70964C12.9727 7.96329 12.7784 8.16688 12.5395 8.3204C12.3006 8.47393 12.0391 8.55069 11.755 8.55069H5.57139L4.42854 10.6333H14.4489V11.8348H4.61222C4.04079 11.8348 3.62923 11.6479 3.37753 11.2741C3.12583 10.9003 3.12923 10.4798 3.38773 10.0125L4.69385 7.64956L1.59183 1.2015H0V0H2.38774L3.14284 1.58198Z" fill="currentColor" data-astro-cid-edntlcwp></path>
           </svg>
         ` })}

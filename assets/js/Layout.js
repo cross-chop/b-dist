@@ -21,7 +21,7 @@ const $$Btn = createComponent(($$result, $$props, $$slots) => {
     isActive = false,
     arrow = false,
     shoulder = "",
-    bannerShoulderTextSP = "",
+    bannerShoulderText = "",
     // SP時のみボタン上部に表示する肩テキスト（バナー用）
     isWide = false,
     id = ""
@@ -43,12 +43,12 @@ ${renderComponent($$result, "btn-component", "btn-component", { "data-href": hre
     disabled: isDisabled,
     isActive,
     hasShoulder: shoulder !== "",
-    hasBannerShoulderSP: bannerShoulderTextSP !== "",
+    hasBannerShoulder: bannerShoulderText !== "",
     isWide,
     hasGradient: gradient !== ""
   }], "style": type === "solid" ? `color: #fff;` : `color: ${color};`, "data-astro-cid-5dcumwjq": true }, { "default": ($$result2) => renderTemplate`
     ${maybeRenderHead()}<span class="frame"${addAttribute(type === "solid" ? gradient ? `background-image: ${gradient};` : `background-color: ${color};` : type === "transparent" ? `background-color: transparent; border-color: ${color};` : type === "invert" ? `background-color: #fff; ` : `background-color: #fff; border-color: ${color};`, "style")} data-astro-cid-5dcumwjq></span>
-    ${bannerShoulderTextSP !== "" && renderTemplate`<span class="bannerShoulderSP" data-astro-cid-5dcumwjq>${bannerShoulderTextSP}</span>`}${(text || html) && tag !== "input" && renderTemplate`<span class="text" data-astro-cid-5dcumwjq>${unescapeHTML(html || text)}</span>`}${target === "_blank" && renderTemplate`<svg class="blank" viewBox="0 0 12 12" fill="none" data-astro-cid-5dcumwjq>
+    ${bannerShoulderText !== "" && renderTemplate`<span class="bannerShoulder" data-astro-cid-5dcumwjq>${bannerShoulderText}</span>`}${(text || html) && tag !== "input" && renderTemplate`<span class="text" data-astro-cid-5dcumwjq>${unescapeHTML(html || text)}</span>`}${target === "_blank" && renderTemplate`<svg class="blank" viewBox="0 0 12 12" fill="none" data-astro-cid-5dcumwjq>
           <path d="M5.49829 1.86133H2C1.44772 1.86133 1 2.30904 1 2.86133V9.85879C1 10.4111 1.44772 10.8588 2 10.8588H8.99659C9.54887 10.8588 9.99659 10.4111 9.99659 9.85879V6.36006" data-astro-cid-5dcumwjq></path>
           <path d="M11.0004 4.85825V0.859375M11.0004 0.859375H7.00195M11.0004 0.859375L7.00195 4.85825" data-astro-cid-5dcumwjq></path>
         </svg>`}${arrow && renderTemplate`<svg class="arrow" viewBox="0 0 8 14" fill="none" data-astro-cid-5dcumwjq>

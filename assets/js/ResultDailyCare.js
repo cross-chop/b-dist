@@ -2,7 +2,7 @@ import { c as createComponent, d as createAstro, m as maybeRenderHead, e as addA
 import 'kleur/colors';
 import { a as $$Btn } from './Layout.js';
 import { p as productsData } from './ProductItem.js';
-/* empty css                                */
+/* empty css                                  */
 
 const $$Astro = createAstro();
 const $$ResultDailyCare = createComponent(($$result, $$props, $$slots) => {
