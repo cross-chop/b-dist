@@ -1,7 +1,7 @@
 import { c as createComponent, d as createAstro, m as maybeRenderHead, f as renderSlot, a as renderTemplate, r as renderComponent, b as renderScript, e as addAttribute, u as unescapeHTML } from './astro/server.js';
 import 'kleur/colors';
 import 'clsx';
-/* empty css                                */
+/* empty css                                  */
 import { $ as $$SecondPageTitle } from './SecondPageTitle.js';
 import { r as resultEyePosition, a as resultShapes, b as resultColors } from './resultCharacter.js';
 import { a as $$Btn } from './Layout.js';
