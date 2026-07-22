@@ -1,7 +1,7 @@
 # bebo dist 差分説明（バックエンド向け）
 
-対象範囲: `9dc2a49`（前回ドキュメント時点） → `d44dc25`（最新・2026-07-21）
-概要: 診断結果ページのスクリプト読み込み位置の修正、商品の表記修正（コーラックⅡの医薬品分類／大地の漢方の内容量・価格）。
+対象範囲: `9dc2a49`（前回ドキュメント時点） → `ac42564`（最新・2026-07-22）
+概要: 診断結果ページのスクリプト読み込み位置の修正、商品の表記修正（コーラックⅡの医薬品分類／大地の漢方の内容量・価格）、warning-symptoms結果ページの診断文言の修正。
 
 ※ 本リポジトリ（b-dist）はビルド済み dist の差分管理用です。
 ※ 本書は **HTMLをPHP開発環境へ移行する作業**を想定し、「どのファイルの、どのHTMLが、どう変わったか」を中心に記載しています。
@@ -11,14 +11,14 @@
 ## 0. TL;DR
 
 - **今回はバックエンドの処理実装が必要な変更はありません。** すべてHTMLの軽微な修正（スクリプトタグの移動・表記修正）です。
-- 変更は大きく **3件**（A〜C）。いずれも新規・削除ファイルはなく、既存ファイルの修正のみです。
+- 変更は大きく **4件**（A〜D）。いずれも新規・削除ファイルはなく、既存ファイルの修正のみです。
 - 移行時に特に注意すべきは **A（`type-check/index.html` のスクリプトタグ位置修正）** です。移行の際にタグ位置が元に戻らないようご注意ください。
 
 ---
 
 ## 1. 変更ファイル一覧（移行対象）
 
-### HTML（10件）
+### HTML（11件）
 
 | ファイル | 変更 |
 |---|---|
@@ -29,17 +29,19 @@
 | `type-check/result/atonic-constipation_mg_kampo/index.html` | C（同上） |
 | `type-check/result/rectal-constipation_kampo/index.html` | C（同上） |
 | `type-check/result/rectal-constipation_mg_kampo/index.html` | C（同上） |
+| `type-check/result/warning-symptoms/index.html` | D（診断文言の修正） |
 | `index.html` | C（`data-has-variations` 等・下記注記参照） |
 | `sign-out/index.html` | C（同上） |
 | `product/{bio-three-hi,borraginol-a,mgo,new-withone}/index.html` | 軽微（下記注記参照） |
 
 > 注記: `index.html` / `sign-out/index.html` / 一部商品ページの差分は、`ProductItem.js` の商品データ更新（C）に連動して再生成された箇所です。表示上の実質的な変更は **C（大地の漢方の内容量・価格）** に集約されます。
 
-### CSS / JS / 画像（3件）
+### CSS / JS / 画像（4件）
 
 | ファイル | 内容 |
 |---|---|
 | `assets/js/ProductItem.js` | 大地の漢方の `capacity` / `price` データ更新（C） |
+| `assets/js/ResultFeedback.js` | warning-symptoms診断文言の更新（D） |
 | `assets/css/main.css` | ビルド生成物の再生成（表示への実質影響なし） |
 | `assets/img/products/daichi-no-kampo.webp` | 商品画像の差し替え（内容量変更に伴う） |
 
@@ -108,6 +110,30 @@
 
 ---
 
+### D. `warning-symptoms` 結果ページ：診断文言の修正
+
+`warning-symptoms`（注意が必要な症状）の診断結果で、**「便秘の傾向はあまり見られません」という誤った文言**が表示されていたのを、症状の内容に合った文言へ修正しました。
+
+| | 内容 |
+|---|---|
+| 変更前（誤） | 現在、あなたには**便秘の傾向はあまり見られません**。 |
+| 変更後（正） | あなたの回答から、**通常の便秘とは異なる注意が必要な症状**が見られました。 |
+
+**HTML上の見え方（`type-check/result/warning-symptoms/index.html`）:**
+```html
+<!-- 変更前 -->
+<h1 class="summary">現在、あなたには<br /><span class="type">便秘の傾向は<br class="sp" />あまり見られません</span>。</h1>
+
+<!-- 変更後 -->
+<h1 class="summary">あなたの回答から、<br class="sp" /><span class="type">通常の便秘とは異なる<br />注意が必要な症状</span>が<br class="sp" />見られました。</h1>
+```
+
+- 反映先: `type-check/result/warning-symptoms/index.html`（表示済みHTML）と `assets/js/ResultFeedback.js`（診断文言のデータ定義）。
+- **表示テキストの修正のみ**で、診断ロジック・スラッグ・URL・バックエンド連携に変更はありません。
+- 対象は `warning-symptoms` の1ページのみ。他の結果ページの文言は変更ありません。
+
+---
+
 ## 3. 変更なし・影響なし
 
 - 問診結果（type-check）のスラッグ、postMessage 連携仕様、結果ページのURL構成に変更はありません。
@@ -118,7 +144,7 @@
 
 ## 4. 対応が必要な項目（チェックリスト）
 
-- [ ] HTML 10件・JS 1件・画像1件・CSS 1件を **セットで反映**
+- [ ] HTML 11件・JS 2件・画像1件・CSS 1件を **セットで反映**
 - [ ] `type-check/index.html` のスクリプトタグが **`</type-check>` 直後**にある状態を維持（移行・整形で位置が戻らないよう注意）（§A）
 - [ ] （商品マスタを保持している場合）**大地の漢方を「120錠 / ¥2,617」に更新**（§C）
 - [ ] （商品マスタを保持している場合）**コーラックⅡの分類を「第2類医薬品」に更新**（§B）
